@@ -42,8 +42,9 @@
   </head>
   <body>
     <header class="container-fluid fixed-top">
-        <div class="row">
+        <div class="row bg-white pt-lg-2 d-non d-lg-flex" id="topnav">
             <!--- Search Bar -->
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left"></div>
             <form action="" method="GET">
                 <div class="input-group w-100 pt-3">
                     <div class="input-group-append">
@@ -52,14 +53,15 @@
                             <i class="fas fa-search"></i>
                         </span>
                     </button>
-                </div>
-                    <input type="text" name="q" placeholder="Search">
+                    </div>
+                    <input class="form-control border rounded-0" type="text" name="q" placeholder="Search">
                 </div>
             </form>
+            </div>
             <!--- Logo --->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center">
-                <a href="{% url 'home' %}" class="nav-link">
-                    <h2>The Kitbag</h2>
+                <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                    <h2 class="logo-font my-0">The Kitbag</h2>
                 </a>
             </div>
             <!--- Account --->
@@ -85,6 +87,23 @@
                             {% endif %}
                         </div>
                     </li>
+                    <!--- Site Info --->
+                    <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                        <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                            <li class="list-inline-item dropdown">
+                                <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="text-center">
+                                        <div><i class="fa-regular fa-circle-info"></i></div>
+                                        <p class="my-0">Site Info</p>
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                                        <a href="" class="dropdown-item">About Us</a>
+                                        <a href="" class="dropdown-item">Contact Us</a>
+                                        <a href="" class="dropdown-item">Size Guide</a>
+                                        <a href="" class="dropdown-item">FAQ's</a>
+                                        <a href="" class="dropdown-item">Returns Policy</a>
+                                </div>
                     <!--- Shopping Bag --->
                     <li class="list-inline-item">
                         <a class="{% if grand_total %} font-weight-bold{% else %}{% endif %} nav-link" href="">
