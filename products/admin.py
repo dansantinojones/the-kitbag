@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Shirt, Leagues
+from .models import Shirt, League
 
 # Register your models here.
 admin.site.register(Shirt)
-admin.site.register(Leagues)
+admin.site.register(League)

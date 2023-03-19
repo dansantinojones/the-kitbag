@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class Leagues(models.Model):
+class League(models.Model):
     name = models.CharField(max_length=50)
     friendly_name = models.CharField(max_length=50, null=False, blank=True)
 
@@ -14,7 +14,7 @@ class Leagues(models.Model):
 
 
 class Shirt(models.Model):
-    leagues = models.ForeignKey('Leagues', null=True, blank=True, on_delete=models.SET_NULL)
+    league = models.ForeignKey('League', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=250, null=True, blank=True)
     name = models.CharField(max_length=250)
     description = models.TextField()
