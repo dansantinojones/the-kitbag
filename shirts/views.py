@@ -13,4 +13,4 @@ def all_shirts(request):
         'shirts': shirts,
     }
 
-    return render(request, 'products/shirts.html', context)
+    return render(request, 'shirts/shirts.html', context)
