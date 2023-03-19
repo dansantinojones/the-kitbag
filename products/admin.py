@@ -2,5 +2,26 @@ from django.contrib import admin
 from .models import Shirt, League
 
 # Register your models here.
-admin.site.register(Shirt)
-admin.site.register(League)
+
+
+class ShirtAdmin(admin.ModelAdmin):
+    list_display = (
+        'sku',
+        'name',
+        'league',
+        'price',
+        'image',
+    )
+
+    ordering = ('sku',)
+
+
+class LeagueAdmin(admin.ModelAdmin):
+    list_display = (
+        'friendly_name',
+        'name',
+    )
+
+
+admin.site.register(Shirt, ShirtAdmin)
+admin.site.register(League, LeagueAdmin)
