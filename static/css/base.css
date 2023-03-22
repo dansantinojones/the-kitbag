@@ -17,3 +17,46 @@ body {
     background: #eee;
     z-index: -1;
 }
+
+/* ----------------------------------------------------- Header Background */
+
+#main-header {
+    background-color: #eee;
+}
+
+/* ----------------------------------------------------- Logo */
+
+.main-logo {
+    text-align: center;
+    color: #000;
+    padding-top: 20px;
+    font-size: 3em;
+}
+
+/* ----------------------------------------------------- Account, Site Info and Basket */
+
+.desktop-account-info-basket-list {
+    display: flex;
+    font-size: 1.5em;
+}
+
+.desktop-icon {
+    color: #000;
+    padding-top: 35px;
+    padding-right: 20px;
+}
+
+.desktop-icon-text {
+    color: #000;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.mobile-icon {
+    color: #000;
+}
+
+.mobile-icon-text {
+    color: #000;
+    text-align: center;
+}
