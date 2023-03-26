@@ -30,6 +30,7 @@
                                 <tr>
                                     <th scope="col">Product Info</th>
                                     <th scope="col"></th>
+                                    <th scope="col">Size</th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Quantity</th>
                                     <th scope="col">Subtotal</th>
@@ -46,13 +47,16 @@
                                         <p>{{ item.shirt.sku|upper }}</p>
                                     </td>
                                     <td>
+                                        <p>{{ item.shirt.size }}</p>
+                                    </td>
+                                    <td>
                                         <p>£{{ item.shirt.price }}</p>
                                     </td>
                                     <td>
                                         <p>{{ item.quantity }}</p>
                                     </td>
                                     <td>
-                                        <p>£{{ }}</p>
+                                        <p>£</p>
                                     </td>
                                 </tr>
                             {% endfor %}
