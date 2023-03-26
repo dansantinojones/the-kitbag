@@ -28,8 +28,8 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th scope="col">Product Info</th>
                                     <th scope="col"></th>
+                                    <th scope="col">Product Info</th>
                                     <th scope="col">Size</th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Quantity</th>
@@ -40,7 +40,7 @@
                             {% for item in basket_items %}
                                 <tr>
                                     <td>
-                                        <img src="{{ item.shirt.image.url }}">
+                                        <img src="{{ item.shirt.image.url }}" class="basket-shirt-image">
                                     </td>
                                     <td>
                                         <p>{{ item.shirt.name }}</p>

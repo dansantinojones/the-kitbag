@@ -67,3 +67,10 @@ body {
 .top-padding {
     padding-top: 200px;
 }
+
+/* ----------------------------------------------------- Basket */
+
+.basket-shirt-image {
+    height: 250px;
+    width: 250px;
+}
