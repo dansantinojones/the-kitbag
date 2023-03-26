@@ -32,6 +32,8 @@
                     <p class="lead mb-0 text-left font-weight-bold">£{{ shirt.price }}</p>
                     <p class="mt-3">{{ shirt.description }}</p>
 
+                    <p>Size: {{ shirt.size }}</p>
+
                     <form class="form" action="{% url 'add_to_basket' shirt.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
