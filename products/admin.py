@@ -10,6 +10,7 @@ class ShirtAdmin(admin.ModelAdmin):
         'name',
         'league',
         'price',
+        'size',
         'image',
     )
 
