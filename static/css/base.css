@@ -74,3 +74,20 @@ body {
     height: 250px;
     width: 250px;
 }
+
+/* ----------------------------------------------------- Hide Top Menu */
+
+@media (max-width: 990px) {
+    .hidden-mobile {
+      display: none;
+    }
+  }
+
+
+  /* ----------------------------------------------------- Hide Logo  */
+
+  @media (min-width: 990px) {
+    .hidden-desktop {
+      display: none;
+    }
+  }
