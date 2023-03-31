@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 
-from .forms import PaymentForm
+from .forms import PurchaseForm
 
 
 def checkout(request):
@@ -10,10 +10,10 @@ def checkout(request):
         messages.error(request, "Your basket is empty!")
         return redirect(reverse('shirts'))
 
-    payment_form = PaymentForm()
+    payment_form = PurchaseForm()
     template = 'checkout/checkout.html'
     context = {
-        'payment_form': payment_form,
+        'purchase_form': payment_form,
     }
 
     return render(request, template, context)
