@@ -107,11 +107,10 @@
                             </div>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="user-options">
-                            <a href="" class="dropdown-item">About Us</a>
-                            <a href="" class="dropdown-item">Contact Us</a>
-                            <a href="" class="dropdown-item">Size Guide</a>
-                            <a href="" class="dropdown-item">FAQ's</a>
-                            <a href="" class="dropdown-item">Returns Policy</a>
+                            <a href="{% url 'about_us' %}" class="dropdown-item">About Us</a>
+                            <a href="{% url 'contact_us' %}" class="dropdown-item">Contact Us</a>
+                            <a href="{% url 'faqs' %}" class="dropdown-item">FAQ's</a>
+                            <a href="{% url 'returns' %}" class="dropdown-item">Returns Policy</a>
                         </div>
                     </li>
 
