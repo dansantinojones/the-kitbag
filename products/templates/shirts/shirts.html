@@ -14,7 +14,9 @@
     <div class="container-fluid top-padding">
         <div class="row">
             <div class="col text-center mt-3">
-                <h2>Products</h2>
+                {% for c in current_leagues %}
+                    <h2>{{ c.friendly_name }}</h2>
+                {% endfor %}
                 <hr class="w-50 mb-1">
             </div>
         </div>
