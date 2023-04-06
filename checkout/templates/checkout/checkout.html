@@ -28,22 +28,22 @@
         <div class="row">
             <div class="col">
                 <p>Fill out the form below to complete your order!</p>
-                <form action="{% url 'checkout' %}" method="POST" id="purchase-form">
+                <form action="{% url 'checkout' %}" method="POST" id="order-form">
                     {% csrf_token %}
                     <fieldset>
                         <legend class="fieldset-label">Your Details</legend>
-                        {{ purchase_form.full_name | as_crispy_field }}
-                        {{ purchase_form.email | as_crispy_field }}
-                        {{ purchase_form.phone_number | as_crispy_field }}
+                        {{ order_form.full_name | as_crispy_field }}
+                        {{ order_form.email | as_crispy_field }}
+                        {{ order_form.phone_number | as_crispy_field }}
                     </fieldset>
                     <fieldset>
                         <legend class="fieldset-label">Delivery</legend>
-                        {{ purchase_form.street_address1 | as_crispy_field }}
-                        {{ purchase_form.street_address2 | as_crispy_field }}
-                        {{ purchase_form.town_or_city | as_crispy_field }}
-                        {{ purchase_form.county | as_crispy_field }}
-                        {{ purchase_form.postcode | as_crispy_field }}
-                        {{ purchase_form.country | as_crispy_field }}
+                        {{ order_form.street_address1 | as_crispy_field }}
+                        {{ order_form.street_address2 | as_crispy_field }}
+                        {{ order_form.town_or_city | as_crispy_field }}
+                        {{ order_form.county | as_crispy_field }}
+                        {{ order_form.postcode | as_crispy_field }}
+                        {{ order_form.country | as_crispy_field }}
                         <div class="form-check form-check-inline">
 							{% if user.is_authenticated %}
 								<label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
