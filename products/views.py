@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from .models import Shirt, League
 from .forms import ShirtForm, SellShirtForm
@@ -50,8 +51,13 @@ def shirt_detail(request, shirt_id):
     return render(request, 'shirts/shirt_detail.html', context)
 
 
+@login_required
 def add_shirt(request):
     """ Add a shirt to the store """
+    if not request.user.is_superuser:
+        # messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = ShirtForm(request.POST, request.FILES)
         if form.is_valid():
@@ -88,8 +94,13 @@ def sell_shirt(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_shirt(request, shirt_id):
     """ Edit a shirt in the store """
+    if not request.user.is_superuser:
+        # messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     shirt = get_object_or_404(Shirt, pk=shirt_id)
     if request.method == 'POST':
         form = ShirtForm(request.POST, request.FILES, instance=shirt)
@@ -112,8 +123,13 @@ def edit_shirt(request, shirt_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_shirt(request, shirt_id):
     """ Delete a shirt from the store """
+    if not request.user.is_superuser:
+        # messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     shirt = get_object_or_404(Shirt, pk=shirt_id)
     shirt.delete()
     # messages.success(request, 'Product deleted!')
