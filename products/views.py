@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from django.contrib import messages 
+from django.contrib import messages
 from django.db.models import Q
 from .models import Shirt, League
 from .forms import ShirtForm, SellShirtForm
@@ -52,6 +52,15 @@ def shirt_detail(request, shirt_id):
 
 def add_shirt(request):
     """ Add a shirt to the store """
+    if request.method == 'POST':
+        form = ShirtForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            # message.success(request, 'Successfully added shirt!')
+            return redirect(reverse('add_shirt'))
+        else:
+            form = ShirtForm()
+
     form = ShirtForm()
     template = 'shirts/add_shirt.html'
     context = {
@@ -62,6 +71,15 @@ def add_shirt(request):
 
 def sell_shirt(request):
     """ Sell a shirt to the store """
+    if request.method == 'POST':
+        form = SellShirt(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            # message.success(request, 'Thanks for the offer! We will be in contact soon.')
+            return redirect(reverse('sell_shirt'))
+        else:
+            form = SellShirt()
+
     form = SellShirtForm()
     template = 'shirts/sell_shirt.html'
     context = {
