@@ -31,3 +31,9 @@ def returns(request):
     """ A view to return the returns policy page """
 
     return render(request, 'home/returns.html')
+
+
+def privacy_policy(request):
+    """ A view to return the privacy policy page """
+
+    return render(request, 'home/privacy_policy.html')
