@@ -39,7 +39,11 @@
                             {% for item in basket_items %}
                                 <tr>
                                     <td>
-                                        <img src="{{ item.shirt.image.url }}" class="basket-shirt-image">
+                                        {% if item.shirt.image %}
+                                            <img class="card-img-top img-fluid" src="{{ item.shirt.image.url }}" alt="{{ shirt.name }}">
+                                        {% else %}
+                                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ shirt.name }}">
+                                        {% endif %}
                                     </td>
                                     <td>
                                         <p>{{ item.shirt.name }}</p>
