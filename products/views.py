@@ -86,3 +86,27 @@ def sell_shirt(request):
         'form': form,
     }
     return render(request, template, context)
+
+
+def edit_shirt(request, shirt_id):
+    """ Edit a shirt in the store """
+    shirt = get_object_or_404(Shirt, pk=shirt_id)
+    if request.method == 'POST':
+        form = ShirtForm(request.POST, request.FILES, instance=shirt)
+        if form.is_valid():
+            form.save()
+            # messages.success(request, 'Successfully updated shirt!)
+            return redirect(reverse('shirt_detail', args=[shirt.id]))
+        else:
+            messages.error(request, 'Failed to update shirt. Please ensure the form is valid.')
+    else:
+        form = ShirtForm(instance=shirt)
+        # messages.info(request, f'You are editing {shirt.name}')
+
+    template = 'shirts/edit_shirt.html'
+    context = {
+        'form': form,
+        'shirt': shirt,
+    }
+
+    return render(request, template, context)
