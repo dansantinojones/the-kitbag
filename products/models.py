@@ -24,3 +24,21 @@ class Shirt(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class SellShirt(models.Model):
+    team_name = models.CharField(max_length=250, null=False, blank=False)
+    home_away_third = models.CharField(max_length=250, null=False, blank=False)
+    league = models.CharField(max_length=250, null=False, blank=False)
+    year = models.CharField(max_length=250, null=False, blank=False)
+    size = models.CharField(max_length=10, null=False, blank=False)
+    condition = models.CharField(max_length=250, null=False, blank=False)
+    additional_info = models.TextField(null=True, blank=True)
+    image_front = models.ImageField(null=False, blank=False)
+    image_back = models.ImageField(null=False, blank=False)
+    full_name = models.CharField(max_length=250, null=False, blank=False)
+    email = models.CharField(max_length=250, null=False, blank=False)
+    phone_number = models.CharField(max_length=250, null=False, blank=False)
+
+    def __str__(self):
+        return self.name
