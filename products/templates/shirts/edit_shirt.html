@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container top-padding">
+        <div class="row">
+            <div class="col">
+                <h2>Product Management</h2>
+                <h5>Edit a Shirt</h5>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <form method="POST" action="{% url 'edit_shirt' shirt.id %}" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <div>
+                        <a href="{% url 'shirts' %}">Cancel</a>
+                        <button type="submit">Update Shirt</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
