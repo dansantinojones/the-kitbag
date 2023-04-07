@@ -55,9 +55,9 @@ def add_shirt(request):
     if request.method == 'POST':
         form = ShirtForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            shirt = form.save()
             # message.success(request, 'Successfully added shirt!')
-            return redirect(reverse('add_shirt'))
+            return redirect(reverse('shirt_detail', args=[shirt.id]))
         else:
             form = ShirtForm()
 
@@ -110,3 +110,11 @@ def edit_shirt(request, shirt_id):
     }
 
     return render(request, template, context)
+
+
+def delete_shirt(request, shirt_id):
+    """ Delete a shirt from the store """
+    shirt = get_object_or_404(Shirt, pk=shirt_id)
+    shirt.delete()
+    # messages.success(request, 'Product deleted!')
+    return redirect(reverse('shirts'))
