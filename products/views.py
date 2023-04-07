@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages 
 from django.db.models import Q
 from .models import Shirt, League
+from .forms import ShirtForm, SellShirtForm
 
 # Create your views here.
 
@@ -47,3 +48,23 @@ def shirt_detail(request, shirt_id):
     }
 
     return render(request, 'shirts/shirt_detail.html', context)
+
+
+def add_shirt(request):
+    """ Add a shirt to the store """
+    form = ShirtForm()
+    template = 'shirts/add_shirt.html'
+    context = {
+        'form': form,
+    }
+    return render(request, template, context)
+
+
+def sell_shirt(request):
+    """ Sell a shirt to the store """
+    form = SellShirtForm()
+    template = 'shirts/sell_shirt.html'
+    context = {
+        'form': form,
+    }
+    return render(request, template, context)
