@@ -2,10 +2,8 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
-from .models import Shirt, League
+from .models import Shirt, League, SellShirt
 from .forms import ShirtForm, SellShirtForm
-
-# Create your views here.
 
 
 def all_shirts(request):
@@ -55,14 +53,14 @@ def shirt_detail(request, shirt_id):
 def add_shirt(request):
     """ Add a shirt to the store """
     if not request.user.is_superuser:
-        # messages.error(request, 'Sorry, only store owners can do that.')
+        messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
         form = ShirtForm(request.POST, request.FILES)
         if form.is_valid():
             shirt = form.save()
-            # message.success(request, 'Successfully added shirt!')
+            messages.success(request, 'Successfully added shirt!')
             return redirect(reverse('shirt_detail', args=[shirt.id]))
         else:
             form = ShirtForm()
@@ -81,7 +79,7 @@ def sell_shirt(request):
         form = SellShirt(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            # message.success(request, 'Thanks for the offer! We will be in contact soon.')
+            messages.success(request, 'Thanks for the offer! We will be in contact soon.')
             return redirect(reverse('sell_shirt'))
         else:
             form = SellShirt()
@@ -98,7 +96,7 @@ def sell_shirt(request):
 def edit_shirt(request, shirt_id):
     """ Edit a shirt in the store """
     if not request.user.is_superuser:
-        # messages.error(request, 'Sorry, only store owners can do that.')
+        messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
     shirt = get_object_or_404(Shirt, pk=shirt_id)
@@ -106,13 +104,13 @@ def edit_shirt(request, shirt_id):
         form = ShirtForm(request.POST, request.FILES, instance=shirt)
         if form.is_valid():
             form.save()
-            # messages.success(request, 'Successfully updated shirt!)
+            messages.success(request, 'Successfully updated shirt!')
             return redirect(reverse('shirt_detail', args=[shirt.id]))
         else:
             messages.error(request, 'Failed to update shirt. Please ensure the form is valid.')
     else:
         form = ShirtForm(instance=shirt)
-        # messages.info(request, f'You are editing {shirt.name}')
+        messages.info(request, f'You are editing {shirt.name}')
 
     template = 'shirts/edit_shirt.html'
     context = {
@@ -127,10 +125,10 @@ def edit_shirt(request, shirt_id):
 def delete_shirt(request, shirt_id):
     """ Delete a shirt from the store """
     if not request.user.is_superuser:
-        # messages.error(request, 'Sorry, only store owners can do that.')
+        messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
     shirt = get_object_or_404(Shirt, pk=shirt_id)
     shirt.delete()
-    # messages.success(request, 'Product deleted!')
+    messages.success(request, 'Product deleted!')
     return redirect(reverse('shirts'))
