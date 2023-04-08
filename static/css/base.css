@@ -62,6 +62,12 @@ body {
     text-align: center;
 }
 
+/* ----------------------------------------------------- Sign Up to Newsletter */
+
+.sign-up-text {
+    color: #eee;
+}
+
 /* ----------------------------------------------------- Shirts and Shirt Detail */
 
 .top-padding {
