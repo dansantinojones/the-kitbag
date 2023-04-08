@@ -40,9 +40,9 @@
                                 <tr>
                                     <td>
                                         {% if item.shirt.image %}
-                                            <img class="card-img-top img-fluid" src="{{ item.shirt.image.url }}" alt="{{ shirt.name }}">
+                                            <img class="card-img-top img-fluid basket-shirt-image" src="{{ item.shirt.image.url }}" alt="{{ shirt.name }}">
                                         {% else %}
-                                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ shirt.name }}">
+                                            <img class="card-img-top img-fluid basket-shirt-image" src="{{ MEDIA_URL }}noimage.png" alt="{{ shirt.name }}">
                                         {% endif %}
                                     </td>
                                     <td>
