@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: url('/media/bg-barca.jpeg');
+    /* background-image: url('/media/bg-barca.jpeg'); */
     background-size: cover;
     height: calc(100vh - 164px);
 }
