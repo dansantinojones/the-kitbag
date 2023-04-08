@@ -1,4 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse
+from django.contrib import messages
+from .models import Newsletter
+from .forms import NewsletterForm
 
 # Create your views here.
 
@@ -37,3 +40,22 @@ def privacy_policy(request):
     """ A view to return the privacy policy page """
 
     return render(request, 'home/privacy_policy.html')
+
+
+def newsletter_signup(request):
+    """ Sign up to newsletter """
+    if request.method == 'POST':
+        form = NewsletterForm(request.POST)
+        print(form.errors)
+        if form.is_valid():
+            form.save()
+            # message.success(request, 'Thanks for signing up to our weekly newsletter!')
+            return redirect(reverse('home'))
+        else:
+            form = NewsletterForm()
+
+    form = NewsletterForm()
+    context = {
+        'form': form,
+    }
+    return redirect(reverse('home'))
