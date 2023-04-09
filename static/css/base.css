@@ -68,6 +68,14 @@ body {
     color: #eee;
 }
 
+/* ----------------------------------------------------- Shop Now */
+
+.shop-now-container {
+    background-color: #000;
+    height: 300px;
+    width: 200px;
+}
+
 /* ----------------------------------------------------- Shirts and Shirt Detail */
 
 .top-padding {
