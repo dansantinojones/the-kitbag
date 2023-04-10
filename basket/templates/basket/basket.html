@@ -32,7 +32,6 @@
                                     <th scope="col">Product Info</th>
                                     <th scope="col">Size</th>
                                     <th scope="col">Price</th>
-                                    <th scope="col">Subtotal</th>
                                 </tr>
                             </thead>
 
@@ -57,7 +56,9 @@
                                     </td>
 
                                     <td>
-                                        <p>£</p>
+                                        <small>
+                                            <a class="text-danger" href="{% url 'remove_from_basket' %}">Delete</a>
+                                        </small>
                                     </td>
                                 </tr>
                             {% endfor %}
