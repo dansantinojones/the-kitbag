@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Review(models.Model):
-    name = models.CharField(max_length=50, null=False, blank=False)
+    full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(null=False, blank=False)
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False)
     body = models.TextField()
