@@ -26,6 +26,14 @@
             </div>
             <div class="col-12 col-lg-6">
                 <h3>Leave a Review</h3>
+                <form method="POST" action="{% url 'post_review' %}" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <div>
+                        <a href="{% url 'home' %}">Cancel</a>
+                        <button type="submit">Post</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
