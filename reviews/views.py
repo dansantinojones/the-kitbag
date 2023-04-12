@@ -9,12 +9,8 @@ from .forms import PostReviewForm
 def reviews(request):
     """ A view to return the reviews page """
 
-    return render(request, 'reviews/reviews.html')
+    reviews = Review.objects.all()
 
-
-@login_required
-def post_review(request):
-    """ Post a review """
     if request.method == 'POST':
         form = PostReviewForm(request.POST)
         if form.is_valid():
@@ -26,7 +22,10 @@ def post_review(request):
 
     form = PostReviewForm()
     template = 'reviews/reviews.html'
+
     context = {
+        'reviews': reviews,
         'form': form,
     }
-    return render(request, template, context)
+    return render(request, 'reviews/reviews.html', context)
+
