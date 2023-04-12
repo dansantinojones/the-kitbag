@@ -22,15 +22,17 @@
         </div>
         <div class="row">
             <div class="col-12 col-lg-6">
+                {% for review in reviews %}
                 <h3>Recent Reviews</h3>
-                    <p>Name:</p>
-                    <p>Date:</p>
-                    <p>Rating:</p>
-                    <p>Comment:</p>
+                    <p>Name: {{ review.full_name }}</p>
+                    <p>Date: {{ review.created_on }}</p>
+                    <p>Rating: {{ review.rating }}</p>
+                    <p>Comment: {{ review.body }}</p>
+                {% endfor %}
             </div>
             <div class="col-12 col-lg-6">
                 <h3>Leave a Review</h3>
-                <form method="POST" action="{% url 'post_review' %}" enctype="multipart/form-data">
+                <form method="POST" action="" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form | crispy }}
                     <div>
