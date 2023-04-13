@@ -1,1 +1,1 @@
-web: gunicorn the_kitbag.wisgi:application
+web: gunicorn the_kitbag.wsgi:application
