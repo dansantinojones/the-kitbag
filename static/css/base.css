@@ -62,7 +62,20 @@ body {
     text-align: center;
 }
 
-/* ----------------------------------------------------- Sign Up to Newsletter */
+/* ----------------------------------------------------- Image Carousel & Sign Up */
+
+.carousel-container {
+    position: relative;
+    text-align: center;
+  }
+
+  .sign-up-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
 
 .sign-up-text {
     color: #eee;
