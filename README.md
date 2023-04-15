@@ -23,9 +23,42 @@ Postcode: 424242
 - Collectors
 - High disposable income
 ### Competitor Review
-- [Classic Football Shirts](https://www.classicfootballshirts.co.uk/)
-- [Retro Football Kits](https://www.retrofootballkits.co.uk/)
-- [Vintage Football Shirts](https://www.vintagefootballshirts.com/)
+1. [Classic Football Shirts](https://www.classicfootballshirts.co.uk/)
+
+<details>
+  <summary>Click here to view competitor analysis on Classic Football Shirts</summary>
+
+  ![](media/cfs-overview.png)
+  ![](media/cfs-location.png)
+  ![](media/csf-demographic.png)
+  ![](media/csf-keywords.png)
+ 
+  </details>
+
+2. [Retro Football Kits](https://www.retrofootballkits.co.uk/)
+
+<details>
+  <summary>Click here to view competitor analysis on Retro Football Kts</summary>
+
+  ![](media/rfk-overview.png)
+  ![](media/rfk-location.png)
+  ![](media/rfk-demographic.png)
+  ![](media/rfk-keywords.png)
+ 
+  </details>
+
+3. [Vintage Football Shirts](https://www.vintagefootballshirts.com/)
+
+<details>
+  <summary>Click here to view competitor analysis on Vintage Football Shirts </summary>
+
+  ![](media/vfs-overview.png)
+  ![](media/vfs-location.png)
+  ![](media/vfs-demographic.png)
+  ![](media/vfs-keywords.png)
+ 
+  </details>
+
 
 ## Scope Plane
 ### User Stories 
@@ -53,13 +86,41 @@ The shirts on sale were displayed on the site using bootstrap cards which stack 
 When planning the shirt detail page I put myself in the shoes of the user to understand what information would be most important to the user and how it will be viewed. The most important information in the buyer decision-making process is, image, name, price and size.
 
 ## Skeleton Plane 
-### Wireframes 
+### Wireframes
+Prior to writing any code, initial wireframes were drawn with pencil and paper. Once happy with the layout and design, I used [Figma](https://www.figma.com/) to create my wireframes. It was important to plan and visualise my website across desktop and mobile to ensure I had a clear vision and the execution of writing code was successful.
+
+<details>
+  <summary>Click here to view Desktop Wireframes:</summary>
+
+  ![](media/wf-desktop-home.png)
+  ![](media/wf-desktop-shirts.png)
+  ![](media/wf-desktop-shirt-detail.png)
+  ![](media/wf-desktop-basket.png)
+  ![](media/wf-desktop-checkout.png)
+ 
+  </details>
+
+<details>
+  <summary>Click here to view Mobile Wireframes:</summary>
+
+  ![](media/wf-mobile-home.png)
+  ![](media/wf-mobile-shirts.png)
+  ![](media/wf-mobile-shirt-detail.png)
+  ![](media/wf-mobile-basket.png)
+  ![](media/wf-mobile-checkout.png)
+ 
+  </details>
+<br>
+
+### Navigation Diagram
+I designed a flowchart using [Lucidchart](https://lucid.app/documents#/documents?folder_id=recent) to help visualise the user experience throughout the website. The milestones are bold to highlight their importance. 
+![](media/navigation-diagram.png)
 ### Database Diagram
 ### Sitemap
 
 ## Surface Plane 
 ### Colours 
-### Typeography 
+### Typography 
 ### Icons
 ### Features
 ### Future Features
@@ -75,9 +136,28 @@ When planning the shirt detail page I put myself in the shoes of the user to und
 ### Privacy Policy
 
 ## Technologies Used
+- HTML
+- CSS
+- JavaScript
+- Python 
+- Django 
+- Bootstrap
+- Gitpod
+- Github
+- Heroku 
+- Elephant SQL
+- Font Awesome
+- Favicon
+- Google Fonts 
+- Figma 
+- Lucid Charts
+- Similarweb
+- Stipe 
+- AWS
 
 ## Testing 
 ### Secret Key
+The Django Secret Key was accidentally exposed through GitHub. Since noticing the mistake, I have created a new secret key inside a .env file and hidden it through a gitignore file. The Secret Key exposed in the files does not work as it has since been changed.
 ### User Stories 
 ### Feature Testing 
 ### Terminal Errors 
