@@ -20,8 +20,9 @@ body {
 
 /* ----------------------------------------------------- Header Background */
 
-#main-header {
+.main-header-bg {
     background-color: #eee;
+    height: 15%;
 }
 
 /* ----------------------------------------------------- Logo */
@@ -131,8 +132,46 @@ footer {
 
   /* ----------------------------------------------------- Hide Logo  */
 
-  @media (min-width: 990px) {
+  @media (min-width: 991px) {
     .hidden-desktop {
       display: none;
+    }
+  }
+
+  /* ----------------------------------------------------- Header Media Queries  */
+
+  @media (max-width: 1125px) {
+    header {
+      font-size: 0.8em;
+    }
+
+    .main-logo {
+        height: 100px;
+        width: 100px;
+    }
+
+    .main-header-bg {
+        height: 12%;
+    }
+  }
+
+  @media (max-width: 532px) {
+    header {
+      font-size: 0.6em;
+    }
+
+    .main-logo {
+        height: 65px;
+        width: 65px;
+    }
+
+    .navbar-toggler {
+      height: 35px;
+      width: 45px;
+    }
+  
+    .navbar-toggler-icon {
+      height: 20px;
+      width: 20px;
     }
   }
