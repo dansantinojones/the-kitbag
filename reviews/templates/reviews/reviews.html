@@ -16,14 +16,14 @@
     <div class="container top-padding">
         <div class="row">
             <div class="col">
-                <h2>Company Reviews</h2>
+                <h2 class="text-center">Company Reviews</h2>
                 <hr>
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-3 mb-3">
             <div class="col-12 col-lg-6">
-                {% for review in reviews %}
                 <h3>Recent Reviews</h3>
+                {% for review in reviews %}
                     <p>Name: {{ review.full_name }}</p>
                     <p>Date: {{ review.created_on }}</p>
                     <p>Rating: {{ review.rating }}</p>
@@ -36,8 +36,8 @@
                     {% csrf_token %}
                     {{ form | crispy }}
                     <div>
-                        <a href="{% url 'home' %}">Cancel</a>
                         <button type="submit">Post</button>
+                        <a href="{% url 'home' %}">Cancel</a>
                     </div>
                 </form>
             </div>
