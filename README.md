@@ -154,6 +154,8 @@ I designed a flowchart using [Lucidchart](https://lucid.app/documents#/documents
 - Similarweb
 - Stipe 
 - AWS
+- Pexels
+- Pixaby
 
 ## Testing 
 ### Secret Key
