@@ -102,6 +102,24 @@ body {
     width: 250px;
 }
 
+/* ----------------------------------------------------- Footer */
+
+footer {
+    bottom: 0;
+    height: 90px;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding-top: 20px;
+    color: #000;
+}
+
+.footer-text {
+    font-size: 1em;
+    padding-top: 20px;
+}
+
 /* ----------------------------------------------------- Hide Top Menu */
 
 @media (max-width: 990px) {
