@@ -38,13 +38,13 @@
                         {% csrf_token %}
                         <div class="form-row">
                             <div class="col-12">
-                                <a href="{% url 'shirts' %}" class="btn">
+                                <input type="submit" class="btn-custom" value="Add to Basket">
+                                <a href="{% url 'shirts' %}" class="btn-custom">
                                     <span>
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span>Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn" value="Add to Basket">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             {% if request.user.is_superuser %}

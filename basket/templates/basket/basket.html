@@ -76,13 +76,13 @@
                             </tr>
                             <tr>
                                 <td colspan="5">
-                                    <a href="{% url 'shirts' %}" class="btn">
+                                    <a href="{% url 'shirts' %}" class="btn-custom">
                                         <span>
                                             <i class="fas fa-chevron-left"></i>
                                         </span>
                                         <span>Keep Shopping</span>
                                     </a>
-                                    <a href="{% url 'checkout' %}" class="btn">
+                                    <a href="{% url 'checkout' %}" class="btn-custom">
                                         <span>Secure Checkout</span>
                                     </a>
                                 </td>
@@ -91,7 +91,7 @@
                     </div>
                 {% else %}
                     <p>There is nothing in your basket</p>
-                    <a href="{% url 'shirts' %}">
+                    <a href="{% url 'shirts' %}" class="btn-custom">
                         <span>
                             <i class="fas fa-chevron-left"></i>
                         </span>

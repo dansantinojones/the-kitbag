@@ -131,6 +131,21 @@ footer {
   margin-right: auto;
 }
 
+/* ----------------------------------------------------- Buttons */
+
+.btn-custom {
+  display: inline-block;
+  border: #000 1px solid;
+  padding: 5px;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.8em;
+}
+
 /* ----------------------------------------------------- Hide Top Menu */
 
 @media (max-width: 990px) {
