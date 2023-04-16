@@ -15,7 +15,7 @@
     <div class="overlay"></div>
     <div class="container top-padding">
         <div class="row">
-            <div class="col">
+            <div class="col text-center mt-3">
                 <h2>Product Management</h2>
                 <h5>Add a Shirt</h5>
                 <hr>
@@ -27,7 +27,7 @@
                 <form method="POST" action="{% url 'add_shirt' %}" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form | crispy }}
-                    <div>
+                    <div class="mb-3">
                         <button type="submit" class="btn-custom">Add</button>
                         <a href="{% url 'shirts' %}" class="btn-custom">Cancel</a> 
                     </div>

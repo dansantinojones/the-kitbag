@@ -15,7 +15,7 @@
     <div class="overlay"></div>
     <div class="container top-padding">
         <div class="row">
-            <div class="col">
+            <div class="col text-center mt-3">
                 <h2>Sell a Shirt</h2>
                 <hr>
             </div>
@@ -29,7 +29,7 @@
             <form method="POST" action="{% url 'sell_shirt' %}" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form | crispy }}
-                <div>
+                <div class="mb-3">
                     <button type="submit" class="btn-custom">Submit</button>
                     <a href="{% url 'home' %}" class="btn-custom">Cancel</a>
                 </div>
