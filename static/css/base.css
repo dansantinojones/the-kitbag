@@ -22,7 +22,6 @@ body {
 
 .main-header-bg {
     background-color: #eee;
-    height: 15%;
 }
 
 /* ----------------------------------------------------- Logo */
@@ -72,15 +71,25 @@ body {
 
   .sign-up-container {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 43%;
+    left:52%;
     transform: translate(-50%, -50%);
-    text-align: left;
+    text-align: center;
   }
 
-.sign-up-text {
-    color: #eee;
-}
+  .sign-up-text {
+      color: #fff;
+      font-size: 3em;
+      text-shadow: 2px 2px #000;
+  }
+
+  .input-signup {
+    height: 50px;
+    width: 90px;
+    border: #000 2px solid;
+    background: #fff;
+    color: #000;
+  }
 
 /* ----------------------------------------------------- Shop Now */
 
@@ -93,7 +102,7 @@ body {
 /* ----------------------------------------------------- Shirts and Shirt Detail */
 
 .top-padding {
-    padding-top: 200px;
+    padding-top: 190px;
 }
 
 /* ----------------------------------------------------- Basket */
@@ -135,7 +144,7 @@ footer {
 
 .btn-custom {
   display: inline-block;
-  border: #000 1px solid;
+  border: #fff 1px solid;
   padding: 5px;
   border-radius: 3px;
   text-decoration: none;
@@ -167,16 +176,16 @@ footer {
 
   @media (max-width: 1125px) {
     header {
-      font-size: 0.8em;
+      font-size: 0.7em;
     }
 
     .main-logo {
-        height: 100px;
-        width: 100px;
+        height: 95px;
+        width: 95px;
     }
 
-    .main-header-bg {
-        height: 12%;
+    .top-padding {
+      padding-top: 150px;
     }
   }
 
@@ -198,5 +207,59 @@ footer {
     .navbar-toggler-icon {
       height: 20px;
       width: 20px;
+    }
+
+    .top-padding {
+      padding-top: 80px;
+    }
+  }
+
+    /* ----------------------------------------------------- Sign Up Media Queries  */
+
+    @media (max-width: 1125px) {
+    .sign-up-container {
+      position: absolute;
+      top: 55%;
+      left:52%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .sign-up-text {
+      color: #fff;
+      font-size: 2em;
+      text-shadow: 2px 2px #000;
+  }
+  
+    .input-signup {
+      height: 30px;
+      width: 70px;
+      border: #000 2px solid;
+      background: #fff;
+      color: #000;
+    }
+  }
+
+  @media (max-width: 595px) {
+    .sign-up-container {
+      position: absolute;
+      top: 60%;
+      left:52%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .sign-up-text {
+      color: #fff;
+      font-size: 1.2em;
+      text-shadow: 2px 2px #000;
+  }
+  
+    .input-signup {
+      height: 20px;
+      width: 60px;
+      border: #000 2px solid;
+      background: #fff;
+      color: #000;
     }
   }
