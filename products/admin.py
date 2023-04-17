@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Shirt, League
+from .models import Shirt, League, SellShirt
 
 # Register your models here.
 
@@ -24,5 +24,23 @@ class LeagueAdmin(admin.ModelAdmin):
     )
 
 
+class SellShirtAdmin(admin.ModelAdmin):
+    list_display = (
+        'team_name',
+        'home_away_third',
+        'league',
+        'year',
+        'size',
+        'condition',
+        'additional_info',
+        'image_front',
+        'image_back',
+        'full_name',
+        'email',
+        'phone_number',
+        )
+
+
 admin.site.register(Shirt, ShirtAdmin)
 admin.site.register(League, LeagueAdmin)
+admin.site.register(SellShirt, SellShirtAdmin)
