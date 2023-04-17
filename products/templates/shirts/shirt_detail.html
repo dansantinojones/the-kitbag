@@ -28,11 +28,11 @@
             </div>
             <div class="col col-12 col-md-6 col-lg-4">
                 <div class="product-detail-container mb-5 mt-md-5">
-                    <p class="mb-0">{{ shirt.name }}</p>
+                    <p class="lead font-weight-bold">{{ shirt.name }}</p>
                     <p class="lead mb-0 text-left font-weight-bold">£{{ shirt.price }}</p>
                     <p class="mt-3">{{ shirt.description }}</p>
 
-                    <p>Size: {{ shirt.size }}</p>
+                    <p>Size: <span class="font-weight-bold">{{ shirt.size }}</span></p>
 
                     <form class="form" action="{% url 'add_to_basket' shirt.id %}" method="POST">
                         {% csrf_token %}
