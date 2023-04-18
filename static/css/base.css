@@ -167,6 +167,16 @@ footer {
   font-size: 0.8em;
 }
 
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: #000 0.5px solid;
+    background-color: #fff;
+}
+
 /* ----------------------------------------------------- Hide Top Menu */
 
 @media (max-width: 990px) {
