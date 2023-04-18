@@ -40,7 +40,8 @@
       <div class="container h-100">
         <div class="row h-100">
             <div>
-                <h1 class="sign-up-text">Sign up to our mailing list to be notified <strong>first</strong> of our new <strong>weekly</strong> football shirts on sale</h1>
+                <h1 class="welcome-text">Welcome to The Kitbag. The one stop shop for rare retro football shirts.</h1>
+                <h5 class="sign-up-text">Sign up to our mailing list to be notified <strong>first</strong> of our new <strong>weekly</strong> football shirts on sale</h5>
                 <form method="POST" action="{% url 'newsletter_signup' %}" enctype="multipart/form-data">
                     {% csrf_token %}
                     <input type="email" name="email" class="w-75 input-signup" placeholder=" Email">

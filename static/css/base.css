@@ -77,9 +77,15 @@ body {
     text-align: center;
   }
 
+  .welcome-text {
+    color: #fff;
+    font-size: 3em;
+    text-shadow: 2px 2px #000;
+}
+
   .sign-up-text {
       color: #fff;
-      font-size: 3em;
+      font-size: 1em;
       text-shadow: 2px 2px #000;
   }
 
@@ -225,9 +231,15 @@ footer {
       text-align: center;
     }
 
-    .sign-up-text {
+    .welcome-text {
       color: #fff;
       font-size: 2em;
+      text-shadow: 1px 1px #000;
+    }
+
+    .sign-up-text {
+      color: #fff;
+      font-size: 0.8em;
       text-shadow: 2px 2px #000;
   }
   
@@ -249,10 +261,16 @@ footer {
       text-align: center;
     }
 
-    .sign-up-text {
+    .welcome-text {
       color: #fff;
       font-size: 1.2em;
       text-shadow: 2px 2px #000;
+    }
+
+    .sign-up-text {
+      color: #fff;
+      font-size: 0.5em;
+      text-shadow: 1px 1px #000;
   }
   
     .input-signup {
