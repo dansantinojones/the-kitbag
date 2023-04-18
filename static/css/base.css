@@ -97,6 +97,12 @@ body {
     color: #000;
   }
 
+  .sign-up-icon {
+    font-size: 1.8em;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+  }
+
 /* ----------------------------------------------------- Shop Now */
 
 .shop-now-container {
@@ -239,16 +245,22 @@ footer {
 
     .sign-up-text {
       color: #fff;
-      font-size: 0.8em;
-      text-shadow: 2px 2px #000;
+      font-size: 1em;
+      text-shadow: 1px 1px #000;
   }
   
     .input-signup {
       height: 30px;
       width: 70px;
-      border: #000 2px solid;
+      border: #000 1.5px solid;
       background: #fff;
       color: #000;
+    }
+
+    .sign-up-icon {
+      font-size: 1em;
+      color: #fff;
+      text-shadow: 2px 2px #000;
     }
   }
 
@@ -270,14 +282,20 @@ footer {
     .sign-up-text {
       color: #fff;
       font-size: 0.5em;
-      text-shadow: 1px 1px #000;
+      text-shadow: 0.5px 0.5px #000;
   }
   
     .input-signup {
       height: 20px;
       width: 60px;
-      border: #000 2px solid;
+      border: #000 1px solid;
       background: #fff;
       color: #000;
+    }
+
+    .sign-up-icon {
+      font-size: 1em;
+      color: #fff;
+      text-shadow: 0.5px 0.5px #000;
     }
   }
