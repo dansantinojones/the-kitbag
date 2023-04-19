@@ -31,6 +31,7 @@
                     {% csrf_token %}
                     {{ form|crispy }}
                     <button class="btn-custom">Update</button>
+                    <a href="{% url 'home' %}" class="btn-custom"><i class="fa-solid fa-house home-icon"></i></a>
                 </form>
             </div>
             <div class="col-12 col-lg-6">
