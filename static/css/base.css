@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap);
+
 html {
     height: 100%;
 }
@@ -6,6 +8,7 @@ body {
     /* background-image: url('/media/bg-barca.jpeg'); */
     background-size: cover;
     height: calc(100vh - 164px);
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .overlay {
@@ -175,6 +178,19 @@ footer {
     right: 10px;
     border: #000 0.5px solid;
     background-color: #fff;
+}
+
+/* ----------------------------------------------------- Icons */
+
+.home-icon {
+  color: #000;
+}
+
+.contact-icon {
+  color: #000;
+  font-size: 4em;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /* ----------------------------------------------------- Hide Top Menu */
