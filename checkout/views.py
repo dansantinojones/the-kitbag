@@ -131,7 +131,7 @@ def checkout_success(request, order_number):
             if user_profile_form.is_valid():
                 user_profile_form.save()
 
-    def _send_confirmation_email(self, order):
+    def _send_confirmation_email(order):
         """Send the user a confirmation email"""
         cust_email = order.email
         subject = render_to_string(
@@ -159,6 +159,6 @@ def checkout_success(request, order_number):
     context = {
         'order': order,
     }
-
+    
     _send_confirmation_email(order)
     return render(request, template, context)
