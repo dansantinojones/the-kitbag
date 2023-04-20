@@ -14,6 +14,7 @@ def view_basket(request):
 def add_to_basket(request, item_id):
     """ Add a spesific shirt to the basket """
 
+    shirt = get_object_or_404(Shirt, pk=item_id)
     redirect_url = request.POST.get('redirect_url')
     basket = request.session.get('basket', {})
 
@@ -22,6 +23,7 @@ def add_to_basket(request, item_id):
     else:
         basket[item_id] = 1
 
+    messages.success(request, f'Added {shirt.name} to your basket')
     request.session['basket'] = basket
     return redirect(redirect_url)
 
