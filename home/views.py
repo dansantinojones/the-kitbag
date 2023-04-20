@@ -49,10 +49,11 @@ def newsletter_signup(request):
         print(form.errors)
         if form.is_valid():
             form.save()
-            message.success(request, 'Thanks for signing up to our weekly newsletter!')
+            messages.success(request, 'Thanks for signing up to our weekly newsletter!')
             return redirect(reverse('home'))
         else:
             form = NewsletterForm()
+            messages.success(request, 'Thanks for signing up to our weekly newsletter!')
 
     form = NewsletterForm()
     context = {
