@@ -26,8 +26,9 @@
                 {% for review in reviews %}
                     <p>Name: {{ review.full_name }}</p>
                     <p>Date: {{ review.created_on }}</p>
-                    <p>Rating: {{ review.rating }}</p>
+                    <p>Rating: <i class="fas fa-star mr-1"></i>{{ review.rating }} / 5</p>
                     <p>Comment: {{ review.body }}</p>
+                    <hr>
                 {% endfor %}
             </div>
             <div class="col-12 col-lg-6">
