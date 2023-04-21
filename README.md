@@ -157,16 +157,22 @@ I designed a flowchart using [Lucidchart](https://lucid.app/documents#/documents
 ### Typography 
 ### Icons
 ### Features
-- Logo
+- Logo<br>
+The logo was created using [Adobe Photoshop](https://www.adobe.com/uk/products/photoshop.html). Design inspiration was taken from popular football club badges. The logo has an imprtant role in the navigation of the website. Users can always return to the home page by clicking on the logo in the header.
 - Search Bar
 - Dropdowns 
+- Leagues Menu
 - Mobile Header
+- Alert Messages<br>
+Alert messages are very important in communicating back to the user once an action is taken. This provides reassurance to the user that their action was completed successfully/uncusessfully. The alert messages are colour coded with green for success, red for error, yellow for alert and blue for info messages. These messages auto-dismiss after a few seconds. 
 - Sign Up
 - Image Carousel
 - Shirt Cards 
 - Filtering
-- Back to Top Button 
-- Product Count
+- Back to Top Button<br>
+The back to top button plays an important role in the navigation of the website. This allows users to return to the top of the page with a click of a button. This is an example good user experience as users don't have to scroll up once at the bottom of the product list. The button is placed on the right of the screen and uses the [Font Awesome](https://fontawesome.com/) arrow up icon.
+- Product Count<br>
+The product count notifies users how many products are available in their search or in the specific league category. A home icon is placed next to the product count for users to return to the home page. 
 - Shirt Detail 
 - Basket
 - Checkout 
@@ -178,6 +184,7 @@ I designed a flowchart using [Lucidchart](https://lucid.app/documents#/documents
 
 ### Future Features
 - Stock Tracker
+- Filtering by size
 
 ## Business Model
 
