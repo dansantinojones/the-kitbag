@@ -41,4 +41,4 @@ class SellShirt(models.Model):
     phone_number = models.CharField(max_length=250, null=False, blank=False)
 
     def __str__(self):
-        return self.name
+        return self.team_name
