@@ -96,7 +96,7 @@ def add_shirt(request):
 def sell_shirt(request):
     """ Sell a shirt to the store """
     if request.method == 'POST':
-        form = SellShirt(request.POST, request.FILES)
+        form = SellShirtForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             messages.success(request, 'Thanks for the offer! We will be in contact soon.')
