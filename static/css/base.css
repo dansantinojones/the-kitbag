@@ -7,6 +7,7 @@ html {
 body {
     background-image: url('/media/bg-barca.jpeg');
     background-size: cover;
+    background-repeat: no-repeat;
     height: calc(100vh - 164px);
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -39,15 +40,11 @@ body {
 
 /* ----------------------------------------------------- Account, Site Info and Basket */
 
-.desktop-account-info-basket-list {
-    display: flex;
-    font-size: 1.5em;
-}
-
 .desktop-icon {
     color: #000;
+    font-size: 1em;
     padding-top: 35px;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 .desktop-icon-text {
@@ -58,6 +55,7 @@ body {
 
 .mobile-icon {
     color: #000;
+    font-size: 5em;
 }
 
 .mobile-icon-text {
@@ -68,29 +66,33 @@ body {
 /* ----------------------------------------------------- Sign Up */
 
   .sign-up-container {
-    position: absolute;
-    top: 43%;
-    left:52%;
-    transform: translate(-50%, -50%);
+    padding-top: 500px;
+    padding-bottom: 280px;
     text-align: center;
   }
 
   .welcome-text {
     color: #fff;
-    font-size: 3em;
+    font-size: 3.5em;
     text-shadow: 2px 2px #000;
 }
 
+  .one-stop-shop-text {
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 2px 2px #000;
+  }
+
   .sign-up-text {
       color: #fff;
-      font-size: 1em;
+      font-size: 1.5em;
       text-shadow: 2px 2px #000;
   }
 
   .input-signup {
     height: 40px;
     width: 80px;
-    border: #000 2px solid;
+    border: #000 1px solid;
     background: #fff;
     color: #000;
   }
@@ -113,7 +115,7 @@ body {
 /* ----------------------------------------------------- Shirts and Shirt Detail */
 
 .top-padding {
-    padding-top: 190px;
+    padding-top: 200px;
 }
 
 /* ----------------------------------------------------- Basket */
@@ -127,7 +129,7 @@ body {
 
 footer {
     bottom: 0;
-    height: 90px;
+    height: 120px;
 }
 
 .footer-list {
@@ -214,7 +216,7 @@ footer {
 
   /* ----------------------------------------------------- Header Media Queries  */
 
-  @media (max-width: 1125px) {
+  @media (max-width: 1132px) {
     header {
       font-size: 0.7em;
     }
@@ -222,6 +224,10 @@ footer {
     .main-logo {
         height: 95px;
         width: 95px;
+    }
+
+    .mobile-icon {
+      font-size: 1.3em;
     }
 
     .top-padding {
@@ -234,9 +240,13 @@ footer {
       font-size: 0.6em;
     }
 
+    .mobile-icon {
+      font-size: 1.3em;
+    }
+
     .main-logo {
-        height: 65px;
-        width: 65px;
+        height: 55px;
+        width: 55px;
     }
 
     .navbar-toggler {
@@ -256,24 +266,29 @@ footer {
 
     /* ----------------------------------------------------- Sign Up Media Queries  */
 
-    @media (max-width: 1125px) {
+    @media (max-width: 1000px) {
+
     .sign-up-container {
-      position: absolute;
-      top: 55%;
-      left:52%;
-      transform: translate(-50%, -50%);
+      padding-top: 300px;
+      padding-bottom: 280px;
       text-align: center;
     }
 
     .welcome-text {
       color: #fff;
-      font-size: 2em;
+      font-size: 3em;
       text-shadow: 1px 1px #000;
+    }
+
+    .one-stop-shop-text {
+      color: #fff;
+      font-size: 2em;
+      text-shadow: 2px 2px #000;
     }
 
     .sign-up-text {
       color: #fff;
-      font-size: 1em;
+      font-size: 1.5em;
       text-shadow: 1px 1px #000;
   }
   
@@ -294,22 +309,27 @@ footer {
 
   @media (max-width: 595px) {
     .sign-up-container {
-      position: absolute;
-      top: 60%;
-      left:52%;
-      transform: translate(-50%, -50%);
+      padding-top: 200px;
+      padding-left: 50px;
+      padding-right: 50px;
       text-align: center;
     }
 
     .welcome-text {
       color: #fff;
-      font-size: 1.2em;
+      font-size: 2em;
+      text-shadow: 2px 2px #000;
+    }
+
+    .one-stop-shop-text {
+      color: #fff;
+      font-size: 1.5em;
       text-shadow: 2px 2px #000;
     }
 
     .sign-up-text {
       color: #fff;
-      font-size: 0.5em;
+      font-size: 1em;
       text-shadow: 0.5px 0.5px #000;
   }
   

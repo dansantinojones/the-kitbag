@@ -53,7 +53,7 @@
         <div class="row hidden-mobile" id="topnav">
 
             <!--- Search Bar -->
-            <div class="col-4">
+            <div class="col-4 pt-3">
                 <form method="GET" action="{% url 'shirts' %}">
                     <div class="input-group p-5">
                         <input type="text" name="q" placeholder="Search">
@@ -69,7 +69,7 @@
             </div>
 
             <!--- Logo --->
-            <div class="col-4">
+            <div class="col-4 pt-3">
                 <a href="{% url 'home' %}">
                     <img src="{{ MEDIA_URL }}logo.png" alt="The Kitbag Logo" class="main-logo">
                 </a>
@@ -80,7 +80,7 @@
                     <li class="list-inline-item dropdown">
                         <a href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
-                                <div><i class="fas fa-user fa-lg desktop-icon"></i></div>
+                                <div class="desktop-icon"><i class="fas fa-user fa-lg"></i></div>
                                 <p class="desktop-icon-text">My Account</p>
                             </div>
                         </a>
@@ -102,7 +102,7 @@
                     <li class="list-inline-item dropdown">
                         <a href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
-                                <i class="fa-solid fa-file desktop-icon"></i>
+                                <div class="desktop-icon"><i class="fa-solid fa-file desktop-icon"></i></div>
                                 <p class="desktop-icon-text">Site Info</p>
                             </div>
                         </a>
@@ -118,7 +118,7 @@
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="{% url 'view_basket' %}">
                             <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-lg desktop-icon"></i></div>
+                                <div class="desktop-icon"><i class="fas fa-shopping-bag fa-lg desktop-icon"></i></div>
                                 <p class="desktop-icon-text">
                                     {% if grand_total %}
                                     £{{ grand_total|floatformat:2 }}
