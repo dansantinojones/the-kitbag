@@ -153,6 +153,20 @@ footer {
   margin-right: auto;
 }
 
+/* ----------------------------------------------------- My Profile */
+
+.order-history {
+  max-height: 416px;
+  overflow-y: auto;
+}
+
+/* ----------------------------------------------------- Reviews */
+
+.recent-reviews {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
 /* ----------------------------------------------------- Buttons */
 
 .btn-custom {
