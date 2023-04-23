@@ -28,27 +28,24 @@
             </div>
             <div class="col col-12 col-md-6 col-lg-4">
                 <div class="product-detail-container mb-5 mt-md-5">
-                    <p class="lead font-weight-bold">{{ shirt.name }}</p>
-                    <p class="lead mb-0 text-left font-weight-bold">£{{ shirt.price }}</p>
-                    <p class="mt-3">{{ shirt.description }}</p>
+                    <p class="lead font-weight-bold shirt-name">{{ shirt.name }}</p>
+                    <p class="lead mb-0 text-left font-weight-bold shirt-price-size">£{{ shirt.price }}</p>
+                    <p class="mt-3 shirt-description">{{ shirt.description }}</p>
 
-                    <p>Size: <span class="font-weight-bold">{{ shirt.size }}</span></p>
+                    <p>Size: <span class="font-weight-bold shirt-price-size">{{ shirt.size }}</span></p>
 
                     <form class="form" action="{% url 'add_to_basket' shirt.id %}" method="POST">
                         {% csrf_token %}
-                        <div class="form-row">
+                        <div class="form-row btn-shirt-detail">
                             <div class="col-12">
-                                <input type="submit" class="btn-custom" value="Add to Basket">
-                                <a href="{% url 'shirts' %}" class="btn-custom">
-                                    <span>
-                                        <i class="fas fa-chevron-left"></i>
-                                    </span>
-                                    <span>Keep Shopping</span>
+                                <input type="submit" class="btn-add-to-basket" value="Add to Basket">
+                                <a href="{% url 'shirts' %}" class="btn-keep-shopping">
+                                    <span class="link-plain">Keep Shopping</span>
                                 </a>
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             {% if request.user.is_superuser %}
-                                <small>
+                                <small class="edit-delete-link">
                                     <a href="{% url 'edit_shirt' shirt.id %}">Edit</a> | 
                                     <a class="text-danger" href="{% url 'delete_shirt' shirt.id %}">Delete</a>
                                 </small>
