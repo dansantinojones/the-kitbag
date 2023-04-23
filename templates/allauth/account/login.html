@@ -42,7 +42,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
   {% endif %}
   <div class="mb-3">
   <button class="primaryAction btn-custom" type="submit">{% trans "Sign In" %}</button>
-  <a href="{% url 'home' %}" class="btn-custom">Home</a>
+  <a href="{% url 'home' %}" class="btn-custom"><i class="fa-solid fa-house home-icon"></i></a>
   <p>
     <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
   </p>
