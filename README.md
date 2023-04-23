@@ -150,6 +150,50 @@ Prior to writing any code, initial wireframes were drawn with pencil and paper. 
 I designed a flowchart using [Lucidchart](https://lucid.app/documents#/documents?folder_id=recent) to help visualise the user experience throughout the website. The milestones are bold to highlight their importance. 
 ![](media/navigation-diagram.png)
 ### Database Diagram
+I used [DrawSQL]() to create and visualise the database diagrams for the project. 
+
+<details>
+  <summary>Click here to view product models:</summary>
+
+  ![]()
+  ![]()
+  ![]()
+ 
+  </details>
+
+<details>
+  <summary>Click here to view order models:</summary>
+
+  ![]()
+  ![]()
+ 
+  </details>
+
+
+<details>
+  <summary>Click here to view profile model:</summary>
+
+  ![]()
+ 
+  </details>
+
+
+<details>
+  <summary>Click here to view review model:</summary>
+
+  ![]()
+ 
+  </details>
+
+
+<details>
+  <summary>Click here to view newsletter model:</summary>
+
+  ![]()
+ 
+  </details>
+<br>
+
 ### Sitemap
 
 ## Surface Plane 
@@ -161,12 +205,12 @@ I designed a flowchart using [Lucidchart](https://lucid.app/documents#/documents
 The logo was created using [Adobe Photoshop](https://www.adobe.com/uk/products/photoshop.html). Design inspiration was taken from popular football club badges. The logo has an imprtant role in the navigation of the website. Users can always return to the home page by clicking on the logo in the header.
 - Search Bar
 - Dropdowns 
-- Leagues Menu
+- Leagues Menu<br>
+All shirts on the website are categorised by the teams' leagues. The main nav menu consists of 7 leagues/categories, making it easy for users to browse their favourite leagues. 
 - Mobile Header
 - Alert Messages<br>
 Alert messages are very important in communicating back to the user once an action is taken. This provides reassurance to the user that their action was completed successfully/uncusessfully. The alert messages are colour coded with green for success, red for error, yellow for alert and blue for info messages. These messages auto-dismiss after a few seconds. 
 - Sign Up
-- Image Carousel
 - Shirt Cards 
 - Filtering
 - Back to Top Button<br>
@@ -179,8 +223,9 @@ The product count notifies users how many products are available in their search
 - Confirmation
 - Leave a Review 
 - Recent Reviews
-- Update Deatils 
+- Update Details 
 - Order History
+The profile page displays the user's order history. This is important for the users to keep track of their previous orders all in one place. The cost, date, time and order number is shown under order history. The order number is a link which will take the user to their order confirmation. 
 
 ### Future Features
 - Stock Tracker
@@ -198,26 +243,35 @@ The product count notifies users how many products are available in their search
 The [Privacy Policy Generator](https://www.privacypolicygenerator.info/) was used to create a Privacy Policy for The Kitbag. It is important to include this on the website as it tells users how and why we are collecting their personal information. From a SEO and Marketing stance, search engine algorithms will find the site trustworthy and prioritise it over websites without one.
 
 ## Technologies Used
-- HTML
-- CSS
-- JavaScript
-- Python 
-- Django 
-- Bootstrap
-- Gitpod
-- Github
-- Heroku 
-- Elephant SQL
-- Font Awesome
-- Favicon
-- Google Fonts 
-- Figma 
-- Lucid Charts
-- Similarweb
-- Stipe 
-- AWS
-- Pexels
-- Pixaby
+- [HTML5](https://www.w3schools.com/html/) was used to create the structure of the website.
+- [CSS3](https://www.w3schools.com/css/) was used to style the website.
+- [JavaScript](https://www.javascript.com/) was used to add interactivity to the website.
+- [Python](https://www.python.org/) was used to build the backend of the website.
+- [Django](https://www.djangoproject.com/) was used to build the website.
+- [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) was used for all account management.
+- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) was used to render the website forms.
+- [PostgresSQL](https://www.postgresql.org/) was used as the database during development.
+- [Gunicorn](https://gunicorn.org/) was used to run the application.
+- [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/) was used to style the website content.
+- [Git](https://git-scm.com/) was used for version control to commit and push to GitHub.
+- [GitPod](https://www.gitpod.io/) was used to 
+- [GitHub](https://github.com/) was used to store the code.
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/) was used to fix errors and test responsiveness.
+- [Heroku](https://heroku.com/) was used to deploy the website.
+- [Elephant SQL](https://www.elephantsql.com/) was used to host the database.
+- [Font Awesome](https://fontawesome.com/) was used for the website icons.
+- [Google Fonts](https://fonts.google.com/) was used for the website font.
+- [Adobe Photoshop](https://www.adobe.com/uk/products/photoshop.html) was used to design and create the logo.
+- [Figma](https://www.figma.com/) was used to design the wireframes.
+- [Lucid Charts](https://lucid.app/) was used to design the navigation diagram.
+- [DrawSQL](https://drawsql.app/) was used to create database diagrams.
+- [Similarweb](https://www.similarweb.com/) was used for competitor analysis.
+- [Stripe](https://stripe.com/gb) was used to process the card payment functionality. 
+- [Amazon AWS](https://aws.amazon.com/) was used to store the static and media files.
+- [Pexels](https://www.pexels.com/) was used for the image on the 'About Us' page.
+- [Pixaby](https://pixabay.com/) was used for the background image.
+- [Grammarly](https://www.grammarly.com/) was used to check the grammar of the website content.
+- [Privacy Policy Generator](https://www.privacypolicygenerator.info/) was used to create the privacy policy.
 
 ## Testing 
 ### Secret Key
@@ -246,7 +300,24 @@ The Django Secret Key was accidentally exposed through GitHub. Since noticing th
 
 ### Django Setup
 ### ElephantSQL Setup
+1. Open ElephantSQL.
+2. Register or Login.
+3. Click 'Create New Instance'. Create a name and select a region.
+4. Confirm new instance by clicking 'Create Instance'.
+5. Click the instance you created.
+6. Copy the URL to the clipboard.
+7. Paste it into your DATABASE_URL = "enter url here" in .env file.
 ### Heroku Setup
+1. Open Heroku.
+2. Register or Login.
+3. Click 'Create New App'.
+4. Enter app name and select the region.
+5. Click 'Create App'.
+6. Under the 'Deploy' tab, click 'Connect to GitHub'.
+7. Enter your GitHub credentials.
+8. Search for your repository and click 'Connect'.
+9. In the 'Settings' tab, scroll to 'Reveal Config Vars' and copy the ElephantSQL URL from the .env file.
+10. In config vars, set PORT to 8000 and add the SECRET_KEY from the .env file.
 ### Stripe Setup 
 ### Amazon Web Services
 ### Google Email
@@ -269,7 +340,9 @@ The Django Secret Key was accidentally exposed through GitHub. Since noticing th
 2. Select 'Code' and click 'Download Zip'.
 3. Once the download is finished, extract ZIP file and use it in the local environment.
 
-## Credits
+## Credits<br>
+1. [Retro Football Shirt Store](https://www.retrofootballshirtstore.com/) for the product images. 
+2. [Boutiqe Ado](https://codeinstitute.net/) walkthrough project with Code Institute for site inspiration.
 
 ## Acknowledgements
 
