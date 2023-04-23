@@ -114,8 +114,86 @@ body {
 
 /* ----------------------------------------------------- Shirts and Shirt Detail */
 
+.scale:hover {
+  transform: scale(1.1);
+  transition: transform .3s;
+}
+
 .top-padding {
     padding-top: 200px;
+}
+
+.shirt-name {
+  font-size: 1.7em;
+}
+
+.shirt-description {
+  font-size: 1.2em;
+}
+
+.shirt-price-size {
+  font-size: 1.5em;
+}
+
+.btn-shirt-detail {
+  padding-top: 20px;
+}
+
+.btn-add-to-basket {
+  display: inline-block;
+  border: #fff 1px solid;
+  padding: 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1em;
+}
+
+.btn-add-to-basket:hover {
+  display: inline-block;
+  border: #000 1px solid;
+  padding: 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1em;
+}
+
+.btn-keep-shopping {
+  display: inline-block;
+  border: #fff 1px solid;
+  padding: 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1em;
+}
+
+.btn-keep-shopping:hover {
+  display: inline-block;
+  border: #000 1px solid;
+  padding: 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1em;
+}
+
+.edit-delete-link {
+  padding-top: 30px;
+  padding-left: 7px;
 }
 
 /* ----------------------------------------------------- Basket */
@@ -123,6 +201,10 @@ body {
 .basket-shirt-image {
     height: 250px;
     width: 250px;
+}
+
+.basket-text {
+  font-size: 1.3em;
 }
 
 /* ----------------------------------------------------- Footer */
@@ -163,7 +245,7 @@ footer {
 /* ----------------------------------------------------- Reviews */
 
 .recent-reviews {
-  max-height: 500px;
+  max-height: 550px;
   overflow-y: auto;
 }
 
@@ -172,14 +254,27 @@ footer {
 .btn-custom {
   display: inline-block;
   border: #fff 1px solid;
-  padding: 5px;
+  padding: 10px;
   border-radius: 3px;
   text-decoration: none;
   background-color: #fff;
   color: #000;
   cursor: pointer;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 1em;
+}
+
+.btn-custom:hover {
+  display: inline-block;
+  border: #000 1px solid;
+  padding: 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1em;
 }
 
 .btt-button {
@@ -196,6 +291,26 @@ footer {
 
 .remove-item {
   cursor: pointer;
+}
+
+.link-plain {
+  text-decoration: none;
+  color: #000;
+}
+
+.link-plain:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.link-footer {
+  text-decoration: none;
+  color: #000;
+}
+
+.link-footer:hover {
+  text-decoration: underline;
+  color: #000;
 }
 
 /* ----------------------------------------------------- Icons */
