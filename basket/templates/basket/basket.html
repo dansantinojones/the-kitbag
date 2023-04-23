@@ -29,9 +29,9 @@
                             <thead>
                                 <tr>
                                     <th scope="col"></th>
-                                    <th scope="col">Product Info</th>
-                                    <th scope="col">Size</th>
-                                    <th scope="col">Price</th>
+                                    <th scope="col" class="text-center">Product Info</th>
+                                    <th scope="col" class="text-center">Size</th>
+                                    <th scope="col" class="text-center">Price</th>
                                 </tr>
                             </thead>
 
@@ -46,7 +46,6 @@
                                     </td>
                                     <td>
                                         <p>{{ item.shirt.name }}</p>
-                                        <p>{{ item.shirt.sku|upper }}</p>
                                     </td>
                                     <td>
                                         <p>{{ item.shirt.size }}</p>
@@ -63,7 +62,7 @@
                                 </tr>
                             {% endfor %}
                             <tr>
-                                <td colspan="5">
+                                <td colspan="5" class="text-right">
                                     <h6>Bag Total: £{{ total|floatformat:2 }}</h6>
                                     <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
                                     <h4>Grand Total: £{{ grand_total|floatformat:2 }}</h4>
@@ -75,11 +74,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="5">
-                                    <a href="{% url 'shirts' %}" class="btn-custom">
-                                        <span>
-                                            <i class="fas fa-chevron-left"></i>
-                                        </span>
+                                <td colspan="5" class="text-right">
+                                    <a href="{% url 'shirts' %}" class="btn-custom mb-5">
                                         <span>Keep Shopping</span>
                                     </a>
                                     <a href="{% url 'checkout' %}" class="btn-custom">
@@ -91,11 +87,8 @@
                     </div>
                 {% else %}
                 <div class="mb-3">
-                    <p>There is nothing in your basket</p>
-                    <a href="{% url 'shirts' %}" class="btn-custom">
-                        <span>
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
+                    <p class="basket-text">There is nothing in your basket</p>
+                    <a href="{% url 'shirts' %}" class="btn-keep-shopping">
                         <span>Keep Shopping</span>
                     </a>
                 </div>
