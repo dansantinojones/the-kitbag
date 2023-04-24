@@ -3,7 +3,7 @@
 ## Introduction
 This online store was created and developed as my final portfolio project for my Full Stack Software Development course with Code Institute. The Kitbag is an e-commerce website selling retro football shirts. Users can register an account, browse shirts on sale, purchase shirts with card payment, view order history and sell shirts.
 
-View the live project here: [The Kitbag]()
+View the live project here: [The Kitbag](https://the-kitbag.herokuapp.com/)
 
 This is for educational purposes only, please don’t enter your card details.
 If you want to test the payment system, use these test card details: <br>
@@ -97,6 +97,7 @@ As an admin:
 
 ### Agile Methodology
 The Kitbag was created using the agile approach, from the initial planning and wireframing to building the front and back-end functionalities. I used GitHub project to build a Kanban board to visualise the user stories from ‘To Do’ to ‘In Progress’ to ‘Done’. User Stories that could not be completed were put into ‘Out of Scope’. ’Important’ red tags were used on the User Stories that needed addressing first. ‘Urgent’ yellow tags were used on User Stories that must be included. ‘CRUD’ aqua tags were used to highlight the Admin Stories. 
+
 ### Milestones
 - Home
 - Registration
@@ -149,23 +150,24 @@ Prior to writing any code, initial wireframes were drawn with pencil and paper. 
 ### Navigation Diagram
 I designed a flowchart using [Lucidchart](https://lucid.app/documents#/documents?folder_id=recent) to help visualise the user experience throughout the website. The milestones are bold to highlight their importance. 
 ![](media/navigation-diagram.png)
+
 ### Database Diagram
 I used [DrawSQL]() to create and visualise the database diagrams for the project. 
 
 <details>
   <summary>Click here to view product models:</summary>
 
-  ![]()
-  ![]()
-  ![]()
+  ![](/media/db-league.png)
+  ![](/media/db-shirt.jpg)
+  ![](/media/db-sellshirt.jpg)
  
   </details>
 
 <details>
   <summary>Click here to view order models:</summary>
 
-  ![]()
-  ![]()
+  ![](/media/db-order.png)
+  ![](/media/db-orderlineitem.png)
  
   </details>
 
@@ -173,7 +175,7 @@ I used [DrawSQL]() to create and visualise the database diagrams for the project
 <details>
   <summary>Click here to view profile model:</summary>
 
-  ![]()
+  ![](/media/db-userprofile.png)
  
   </details>
 
@@ -181,7 +183,7 @@ I used [DrawSQL]() to create and visualise the database diagrams for the project
 <details>
   <summary>Click here to view review model:</summary>
 
-  ![]()
+  ![](/media/db-reviews.png)
  
   </details>
 
@@ -189,7 +191,7 @@ I used [DrawSQL]() to create and visualise the database diagrams for the project
 <details>
   <summary>Click here to view newsletter model:</summary>
 
-  ![]()
+  ![](/media/db-newsletter.png)
  
   </details>
 <br>
@@ -230,6 +232,7 @@ The profile page displays the user's order history. This is important for the us
 ### Future Features
 - Stock Tracker
 - Filtering by size
+- Randomizer
 
 ## Business Model
 
@@ -278,6 +281,32 @@ The [Privacy Policy Generator](https://www.privacypolicygenerator.info/) was use
 The Django Secret Key was accidentally exposed through GitHub. Since noticing the mistake, I have created a new secret key inside a .env file and hidden it through a gitignore file. The Secret Key exposed in the files does not work as it has since been changed.
 ### User Stories 
 ### Feature Testing 
+| Feature      | Description | Result     |
+| :---        |    :----:   |          ---: |
+| Logo      | Click returns to home page       | ✅   |
+| Search Bar   | Shows results from search term       |    ✅    |
+| Alert Messages    | Display messages about users action        |        |
+| Product Count   | View number of products        |   ✅    |
+| Filtering    | Filter items        |   ✅    |
+| Back to Top Button    | Click to go back to top        |    ✅   |
+| Add to Basket   | Add itmes to basket        |       |
+| Remove from Basket   | Remove itmes from basket        |       |
+| Checkout   |     Use card details to checkout order    |       |
+| Order Confirmation   | Display details after order        |       |
+| Order Confirmation Email   | Receive an email confirmation        |       |
+| Newsletter Sign Up   | Sign up using an email address        |       |
+| Sell a Shirt   | Fill out a form to sell a shirt        |       |
+|  Register   | User's can register for an account        |       |
+| Login   | User's can login to their account        |       |
+| Logout   | User's can logout of their account        |       |
+| Forgot Password   | Reset password        |       |
+| Add Shirt   | Add a shirt to the store        |       |
+| Edit Shirt   | Edit a shirt from the store        |       |
+| Delete Shirt   | Delete a shirt from the store        |       |
+| Leave a Review   | Post a review        |      |
+| Recent Reviews   | Display recent reviews        |      |
+| Update Information   | User's can update their information        |      |
+| Order History   | Display's users order history        |       |
 ### Terminal Errors 
 ### HTML Validator 
 ### CCS Validator 
@@ -345,6 +374,7 @@ The Django Secret Key was accidentally exposed through GitHub. Since noticing th
 2. [Boutiqe Ado](https://codeinstitute.net/) walkthrough project with Code Institute for site inspiration.
 
 ## Acknowledgements
+I would like to thank my mentor Chris Quinn for his advice and guidance throughout the project.
 
 
 
