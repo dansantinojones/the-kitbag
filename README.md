@@ -152,49 +152,10 @@ I designed a flowchart using [Lucidchart](https://lucid.app/documents#/documents
 ![](media/navigation-diagram.png)
 
 ### Database Diagram
-I used [DrawSQL]() to create and visualise the database diagrams for the project. 
+I used [DrawSQL]() to create and visualise the database diagram and the relationships between them. 
 
-<details>
-  <summary>Click here to view product models:</summary>
+![](/media/database-diagram.png)
 
-  ![](/media/db-league.png)
-  ![](/media/db-shirt.jpg)
-  ![](/media/db-sellshirt.jpg)
- 
-  </details>
-
-<details>
-  <summary>Click here to view order models:</summary>
-
-  ![](/media/db-order.png)
-  ![](/media/db-orderlineitem.png)
- 
-  </details>
-
-
-<details>
-  <summary>Click here to view profile model:</summary>
-
-  ![](/media/db-userprofile.png)
- 
-  </details>
-
-
-<details>
-  <summary>Click here to view review model:</summary>
-
-  ![](/media/db-reviews.png)
- 
-  </details>
-
-
-<details>
-  <summary>Click here to view newsletter model:</summary>
-
-  ![](/media/db-newsletter.png)
- 
-  </details>
-<br>
 
 ### Sitemap
 
@@ -285,28 +246,28 @@ The Django Secret Key was accidentally exposed through GitHub. Since noticing th
 | :---        |    :----:   |          ---: |
 | Logo      | Click returns to home page       | ✅   |
 | Search Bar   | Shows results from search term       |    ✅    |
-| Alert Messages    | Display messages about users action        |        |
+| Alert Messages    | Display messages about users action        |   ✅     |
 | Product Count   | View number of products        |   ✅    |
 | Filtering    | Filter items        |   ✅    |
 | Back to Top Button    | Click to go back to top        |    ✅   |
-| Add to Basket   | Add itmes to basket        |       |
-| Remove from Basket   | Remove itmes from basket        |       |
-| Checkout   |     Use card details to checkout order    |       |
-| Order Confirmation   | Display details after order        |       |
+| Add to Basket   | Add items to basket        |    ✅   |
+| Remove from Basket   | Remove items from basket        |   ✅    |
+| Checkout   |     Use card details to checkout order    |   ✅    |
+| Order Confirmation   | Display details after order        |   ✅    |
 | Order Confirmation Email   | Receive an email confirmation        |       |
-| Newsletter Sign Up   | Sign up using an email address        |       |
-| Sell a Shirt   | Fill out a form to sell a shirt        |       |
-|  Register   | User's can register for an account        |       |
-| Login   | User's can login to their account        |       |
-| Logout   | User's can logout of their account        |       |
-| Forgot Password   | Reset password        |       |
-| Add Shirt   | Add a shirt to the store        |       |
-| Edit Shirt   | Edit a shirt from the store        |       |
-| Delete Shirt   | Delete a shirt from the store        |       |
-| Leave a Review   | Post a review        |      |
-| Recent Reviews   | Display recent reviews        |      |
-| Update Information   | User's can update their information        |      |
-| Order History   | Display's users order history        |       |
+| Newsletter Sign Up   | Sign up using an email address        |   ✅    |
+| Sell a Shirt   | Fill out a form to sell a shirt        |    ✅   |
+|  Register   | Users can register for an account        |   ✅   |
+| Login   | Users can log in to their account        |   ✅    |
+| Logout   | Users can log out of their account        |   ✅    |
+| Forgot Password   | Reset password        |   ✅    |
+| Add Shirt   | Add a shirt to the store        |   ✅    |
+| Edit Shirt   | Edit a shirt from the store        |   ✅    |
+| Delete Shirt   | Delete a shirt from the store        |   ✅    |
+| Leave a Review   | Post a review        |   ✅   |
+| Recent Reviews   | Display recent reviews        |  ✅    |
+| Update Information   | Users can update their information        |  ✅    |
+| Order History   | Display's users order history        |   ✅    |
 ### Terminal Errors 
 ### HTML Validator 
 ### CCS Validator 
