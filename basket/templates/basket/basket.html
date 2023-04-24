@@ -24,86 +24,133 @@
         <div class="row">
             <div class="col">
                 {% if basket_items %}
-                    <div class="table-responsive">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th scope="col"></th>
-                                    <th scope="col" class="text-center">Product Info</th>
-                                    <th scope="col" class="text-center">Size</th>
-                                    <th scope="col" class="text-center">Price</th>
-                                </tr>
-                            </thead>
-
-                            {% for item in basket_items %}
-                                <tr>
-                                    <td>
-                                        {% if item.shirt.image %}
-                                            <img class="card-img-top img-fluid basket-shirt-image" src="{{ item.shirt.image.url }}" alt="{{ shirt.name }}">
-                                        {% else %}
-                                            <img class="card-img-top img-fluid basket-shirt-image" src="{{ MEDIA_URL }}noimage.png" alt="{{ shirt.name }}">
-                                        {% endif %}
-                                    </td>
-                                    <td>
-                                        <p>{{ item.shirt.name }}</p>
-                                    </td>
-                                    <td>
-                                        <p>{{ item.shirt.size }}</p>
-                                    </td>
-                                    <td>
-                                        <p>£{{ item.shirt.price }}</p>
-                                    </td>
-
-                                    <td>
-                                        <small>
-                                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}">Remove</a>
-                                        </small>
-                                    </td>
-                                </tr>
-                            {% endfor %}
-                            <tr>
-                                <td colspan="5" class="text-right">
-                                    <h6>Bag Total: £{{ total|floatformat:2 }}</h6>
-                                    <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
-                                    <h4>Grand Total: £{{ grand_total|floatformat:2 }}</h4>
-                                    {% if free_delivery_delta > 0 %}
-                                        <p>
-                                            Spend <strong>£{{ free_delivery_delta }}</strong> more to get free delivery!
-                                        </p>
+                    <div class="d-block d-md-none">
+                        <div class="row">
+                            <div class="col">
+                                <h6 class="mobile-basket-total mt-3">Bag Total: £{{ total|floatformat:2 }}</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="{% url 'checkout' %}" class="btn-custom">
+                                    <span class="text-success">Secure Checkout</span>
+                                </a>
+                                <a href="{% url 'shirts' %}" class="btn-custom mb-5">
+                                    <span>Keep Shopping</span>
+                                </a>
+                            </div>
+                        </div>
+                        {% for item in basket_items %}
+                            <div class="row">
+                                <div class="col-12 col-sm-6 mb-2">
+                                    {% if item.shirt.image %}
+                                        <img class="card-img-top img-fluid basket-shirt-image" src="{{ item.shirt.image.url }}" alt="{{ shirt.name }}">
+                                    {% else %}
+                                        <img class="card-img-top img-fluid basket-shirt-image" src="{{ MEDIA_URL }}noimage.png" alt="{{ shirt.name }}">
                                     {% endif %}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="5" class="text-right">
-                                    <a href="{% url 'shirts' %}" class="btn-custom mb-5">
-                                        <span>Keep Shopping</span>
-                                    </a>
-                                    <a href="{% url 'checkout' %}" class="btn-custom">
-                                        <span>Secure Checkout</span>
-                                    </a>
-                                </td>
-                            </tr>
-                        </table>
+                                </div>
+                                <div class="col-12 col-sm-6 mb-2">
+                                    <p>{{ item.shirt.name }}</p>
+                                    <p>Size: {{ item.shirt.size }}</p>
+                                    <p>Price: £{{ item.shirt.price }}</p>
+                                    <small>
+                                        <a class="pointer text-danger" id="remove_{{ item.item_id }}">Remove</a>
+                                    </small>
+                                </div>
+                            </div>
+                        {% endfor %}
+                        <div class="btt-button shadow-sm">
+                            <a class="btt-link d-flex h-100">
+                                <i class="fas fa-arrow-up mx-auto my-auto"></i>
+                            </a>	
+                        </div>
                     </div>
-                {% else %}
-                <div class="mb-3">
-                    <p class="basket-text">There is nothing in your basket</p>
-                    <a href="{% url 'shirts' %}" class="btn-keep-shopping">
-                        <span>Keep Shopping</span>
-                    </a>
+
+                    <div class="row">
+                        <div class="col">
+                                <div class="table-responsive rounded d-none d-md-block">
+                                    <table class="table table-sm table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col" class="text-center">Product Info</th>
+                                                <th scope="col" class="text-center">Size</th>
+                                                <th scope="col" class="text-center">Price</th>
+                                            </tr>
+                                        </thead>
+                                        {% for item in basket_items %}
+                                            <tr>
+                                                <td class="p-3 w-25">
+                                                    {% if item.shirt.image %}
+                                                        <img class="card-img-top img-fluid basket-shirt-image" src="{{ item.shirt.image.url }}" alt="{{ shirt.name }}">
+                                                    {% else %}
+                                                        <img class="card-img-top img-fluid basket-shirt-image" src="{{ MEDIA_URL }}noimage.png" alt="{{ shirt.name }}">
+                                                    {% endif %}
+                                                </td>
+                                                <td class="py-3 text-center">
+                                                    <p>{{ item.shirt.name }}</p>
+                                                </td>
+                                                <td class="py-3 text-center">
+                                                    <p>{{ item.shirt.size }}</p>
+                                                </td>
+                                                <td>
+                                                    <p class="py-3 text-center">£{{ item.shirt.price }}</p>
+                                                </td>
+                                                <td class="py-3 text-center">
+                                                    <small>
+                                                        <a class="pointer text-danger float-right" id="remove_{{ item.item_id }}">Remove</a>
+                                                    </small>
+                                                </td>
+                                            </tr>
+                                        {% endfor %}
+                                        <tr>
+                                            <td colspan="5" class="pt-5 text-right">
+                                                <h6>Bag Total: £{{ total|floatformat:2 }}</h6>
+                                                <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
+                                                <h4>Grand Total: £{{ grand_total|floatformat:2 }}</h4>
+                                                {% if free_delivery_delta > 0 %}
+                                                    <p>
+                                                        Spend <strong>£{{ free_delivery_delta }}</strong> more to get free delivery!
+                                                    </p>
+                                                {% endif %}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="text-right">
+                                                <a href="{% url 'checkout' %}" class="btn-custom">
+                                                    <span class="text-success">Secure Checkout</span>
+                                                </a>
+                                                <a href="{% url 'shirts' %}" class="btn-custom mb-5">
+                                                    <span>Keep Shopping</span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            {% else %}
+                            <div class="mb-3">
+                                <p class="basket-text">There is nothing in your basket</p>
+                                <a href="{% url 'shirts' %}" class="btn-keep-shopping">
+                                    <span>Keep Shopping</span>
+                                </a>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
                 </div>
-                {% endif %}
-            </div>
-        </div>
-    </div>
 
 {% endblock %}
 
 {% block postloadjs %}
 <script type="text/javascript">
+    $('.btt-link').click(function(e) {
+        window.scrollTo(0,0)
+    })
+</script>
 
+<script type="text/javascript">
     // Remove item and reload on click
-    $('.remove-item').click(function (e) {
+    $('.pointer').click(function (e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         var url = `/basket/remove/${itemId}/`;
