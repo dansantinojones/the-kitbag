@@ -52,7 +52,7 @@
     <header class="container-fluid fixed-top fixed-top-desktop-only main-header-bg">
         <div class="row hidden-mobile" id="topnav">
 
-            <!--- Search Bar -->
+            <!-- Search Bar -->
             <div class="col-4 pt-3">
                 <form method="GET" action="{% url 'shirts' %}">
                     <div class="input-group p-5">
@@ -68,14 +68,14 @@
                 </form>
             </div>
 
-            <!--- Logo --->
+            <!-- Logo -->
             <div class="col-4 pt-3">
                 <a href="{% url 'home' %}">
                     <img src="{{ MEDIA_URL }}logo.png" alt="The Kitbag Logo" class="main-logo">
                 </a>
             </div>
             <div class="col-4">
-                <!--- Account --->
+                <!-- Account -->
                 <ul>
                     <li class="list-inline-item dropdown">
                         <a href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -98,7 +98,7 @@
                         </div>
                     </li>
 
-                    <!--- Site Info --->
+                    <!-- Site Info -->
                     <li class="list-inline-item dropdown">
                         <a href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
@@ -113,7 +113,7 @@
                         </div>
                     </li>
 
-                    <!--- Basket --->
+                    <!-- Basket -->
                     <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="{% url 'view_basket' %}">
@@ -133,7 +133,7 @@
             </div>
         </div>
 
-        <!--- Menu --->
+        <!-- Menu -->
         <div class="row bg-white">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
