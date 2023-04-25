@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col text-center mt-3">
                 {% for c in current_leagues %}
-                    <h2>{{ c.friendly_name }}</h2>
+                    <h2 class="mobile-title">{{ c.friendly_name }}</h2>
                 {% endfor %}
                 <hr class="w-50 mb-1">
             </div>
@@ -57,15 +57,15 @@
                                 </a>
                                 {% endif %}
                                 <div class="card-body pb-0">
-                                    <p class="lead mb-3 font-weight-bold">{{ shirt.name }}</p>
+                                    <p class="lead mb-3 font-weight-bold shirt-name-text">{{ shirt.name }}</p>
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">£{{ shirt.price }}</p>
+                                            <p class="lead mb-0 text-left font-weight-bold shirt-price-text">£{{ shirt.price }}</p>
                                         </div>
                                         <div class="col">
-                                            <p>Size: <span class="lead font-weight-bold">{{ shirt.size }}</span></p>
+                                            <p>Size: <span class="lead font-weight-bold shirt-size-text">{{ shirt.size }}</span></p>
                                         </div>
                                     </div>
                                 </div>

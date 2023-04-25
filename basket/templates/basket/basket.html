@@ -16,7 +16,7 @@
     <div class="container top-padding">
         <div class="row">
             <div class="col text-center mt-3">
-                <h2>My Basket</h2>
+                <h2 class="mobile-title">My Basket</h2>
                 <hr>
             </div>
         </div>
@@ -32,10 +32,10 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <a href="{% url 'checkout' %}" class="btn-custom">
+                                <a href="{% url 'checkout' %}" class="btn-secure-checkout">
                                     <span class="text-success">Secure Checkout</span>
                                 </a>
-                                <a href="{% url 'shirts' %}" class="btn-custom mb-5">
+                                <a href="{% url 'shirts' %}" class="btn-keep-shopping mb-5">
                                     <span>Keep Shopping</span>
                                 </a>
                             </div>
@@ -117,10 +117,10 @@
                                         </tr>
                                         <tr>
                                             <td colspan="5" class="text-right">
-                                                <a href="{% url 'checkout' %}" class="btn-custom">
+                                                <a href="{% url 'checkout' %}" class="btn-secure-checkout">
                                                     <span class="text-success">Secure Checkout</span>
                                                 </a>
-                                                <a href="{% url 'shirts' %}" class="btn-custom mb-5">
+                                                <a href="{% url 'shirts' %}" class="btn-keep-shopping mb-5">
                                                     <span>Keep Shopping</span>
                                                 </a>
                                             </td>
