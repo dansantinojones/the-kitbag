@@ -1,5 +1,5 @@
 <div class="mobile-header-container">
-<!--- Search --->
+<!-- Search -->
 <div>
     <a class="nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
@@ -21,20 +21,20 @@
         </form>
     </div>
 </div>
-<!--- Logo -->
+<!-- Logo -->
 <div class="hidden-desktop">
         <a href="{% url 'home' %}">
             <img src="{{ MEDIA_URL }}logo.png" alt="The Kitbag Logo" class="main-logo">
         </a>
 </div>
-<!--- Account --->
+<!-- Account -->
 <div class="dropdown">
     <a class="nav-link d-block d-lg-none" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
             <div class="mobile-icon"><i class="fas fa-user fa-lg mobile-icon"></i></div>
         </div>
     </a>
-    <div class="dropdown-menu border-0" aria-labelledby="user-options">
+    <div class="dropdown-menu border-0">
         {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
                 <a href="{% url 'add_shirt' %}" class="dropdown-item">Product Management</a>
@@ -47,20 +47,20 @@
         {% endif %}
     </div>
 </div>
-<!--- Site Info --->
+<!-- Site Info -->
 <div class="dropdown">
     <a class="nav-link d-block d-lg-none" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
             <div class="mobile-icon"><i class="fa-solid fa-file mobile-icon"></i></div>
         </div>
     </a>
-    <div class="dropdown-menu border-0" aria-labelledby="user-options">
+    <div class="dropdown-menu border-0">
             <a href="{% url 'about_us' %}" class="dropdown-item">About Us</a>
             <a href="{% url 'sell_shirt' %}" class="dropdown-item">Sell a Shirt</a>
             <a href="{% url 'reviews' %}" class="dropdown-item">Company Reviews</a>
     </div>
 </div>
-<!--- Basket --->
+<!-- Basket -->
 <div>
     <a class="{% if grand_total %}text-primary font-weight-bold{% else %}{% endif %} nav-link d-block d-lg-none" href="{% url 'view_basket' %}">
         <div class="text-center">

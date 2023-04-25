@@ -84,7 +84,7 @@
                                 <p class="desktop-icon-text">My Account</p>
                             </div>
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="user-options">
+                        <div class="dropdown-menu">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <a href="{% url 'add_shirt' %}" class="dropdown-item">Product Management</a>
@@ -106,7 +106,7 @@
                                 <p class="desktop-icon-text">Site Info</p>
                             </div>
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="user-options">
+                        <div class="dropdown-menu">
                             <a href="{% url 'about_us' %}" class="dropdown-item">About Us</a>
                             <a href="{% url 'sell_shirt' %}" class="dropdown-item">Sell a Shirt</a>
                             <a href="{% url 'reviews' %}" class="dropdown-item">Company Reviews</a>
