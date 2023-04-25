@@ -152,7 +152,7 @@ I designed a flowchart using [Lucidchart](https://lucid.app/documents#/documents
 ![](media/navigation-diagram.png)
 
 ### Database Diagram
-I used [DrawSQL]() to create and visualise the database diagram and the relationships between them. 
+I used [DrawSQL](https://drawsql.app/) to create and visualise the database diagram and the relationships between them. 
 
 ![](/media/database-diagram.png)
 
@@ -254,7 +254,7 @@ The Django Secret Key was accidentally exposed through GitHub. Since noticing th
 | Remove from Basket   | Remove items from basket        |   ✅    |
 | Checkout   |     Use card details to checkout order    |   ✅    |
 | Order Confirmation   | Display details after order        |   ✅    |
-| Order Confirmation Email   | Receive an email confirmation        |       |
+| Order Confirmation Email   | Receive an email confirmation        |   ✅    |
 | Newsletter Sign Up   | Sign up using an email address        |   ✅    |
 | Sell a Shirt   | Fill out a form to sell a shirt        |    ✅   |
 |  Register   | Users can register for an account        |   ✅   |
@@ -268,9 +268,49 @@ The Django Secret Key was accidentally exposed through GitHub. Since noticing th
 | Recent Reviews   | Display recent reviews        |  ✅    |
 | Update Information   | Users can update their information        |  ✅    |
 | Order History   | Display's users order history        |   ✅    |
+
 ### Terminal Errors 
-### HTML Validator 
-### CCS Validator 
+
+### HTML Validator
+The [W3C HTML Validator](https://validator.w3.org/) discovered 16 errors and 13 warnings. Here is a list of the issues found through the validator:
+- 3 x duplicate id user-options<br>
+These errors were resolved by removing the id as they were unused.
+![](/media/html-validator-2.png)
+
+- 7 x duplicate id all-products-link<br>
+These errors were resolved by removing the id as they were unused.
+![](/media/html-validator-3.png)
+
+- 4 aria-labelly attribute<br>
+These errors were resolved by removing the aria-labelly as the matching id were removed.
+![](/media/html-validator-6.png)
+
+- 1 x no li but li closing tag<br>
+This error was resolved by adding the li opening tag.
+![](/media/html-validator-4.png)
+
+- 1 x element a not allowed as a child element of ul<br>
+This error was resolved when the li opening tag was added.
+![](/media/html-validator-5.png)
+
+- 13 x comment warning<br>
+These warnings were resolved by changing the comments from ---> to -->
+![](/media/html-validator-1.png)
+
+Once these errors and warnings were fixed, I passed the deployed site back through the validator. This was the result: 
+![](/media/html-validator-clear.png)
+
+### CSS Validator
+The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) discovered 4 errors and 707 warnings. Here is a list of the errors found through the validator:
+- 4x value errors<br>
+These errors were fixed by removing the class as it was not needed.
+![](/media/css-validator.png)
+Once these errors were addressed, I passed the deployed site back through the validator. No errors were returned. However, the warnings were not addressed as they had no detriment to the website.
+
+### Colour Contrast Validator
+The deployed site was entered into the [Colour Contrast Validator](https://color.a11y.com/). This passed with no issues.
+![](/media/colour-contrast-validator.png)
+
 ### Python Linter
 ### Responsiveness
 ### Lighthouse
@@ -335,7 +375,7 @@ The Django Secret Key was accidentally exposed through GitHub. Since noticing th
 2. [Boutiqe Ado](https://codeinstitute.net/) walkthrough project with Code Institute for site inspiration.
 
 ## Acknowledgements
-I would like to thank my mentor Chris Quinn for his advice and guidance throughout the project.
+I would like to thank the tutors at Code Institute and my mentor Chris Quinn for his advice and guidance throughout the project.
 
 
 
