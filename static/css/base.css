@@ -218,6 +218,32 @@ body {
   font-size: 1.5em;
 }
 
+.btn-secure-checkout {
+  display: inline-block;
+  border: #fff 1px solid;
+  padding: 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1em;
+}
+
+.btn-secure-checkout:hover {
+  display: inline-block;
+  border: #000 1px solid;
+  padding: 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1em;
+}
+
 /* ----------------------------------------------------- Footer */
 
 footer {
@@ -360,7 +386,7 @@ footer {
 
   /* ----------------------------------------------------- Header Media Queries  */
 
-  @media (max-width: 1132px) {
+  @media (max-width: 1186px) {
     header {
       font-size: 0.7em;
     }
@@ -491,3 +517,161 @@ footer {
       text-shadow: 0.5px 0.5px #000;
     }
   }
+
+      /* ----------------------------------------------------- Shirts Media Queries  */
+
+      @media (max-width: 455px) {
+        .shirt-name-text {
+          font-size: 1em;
+        }
+
+        .shirt-price-text {
+          font-size: 1em;
+        }
+
+        .shirt-size-text {
+          font-size: 1em;
+        }
+      }
+
+
+    /* ----------------------------------------------------- Shirt Detail Media Queries  */
+
+    @media (max-width: 455px) {
+      .mobile-title {
+        font-size: 1.5em;
+      }
+
+      .shirt-name {
+        font-size: 1.3em;
+      }
+      
+      .shirt-description {
+        font-size: 1em;
+      }
+      
+      .shirt-price-size {
+        font-size: 1em;
+      }
+
+      .btn-add-to-basket {
+        display: inline-block;
+        border: #fff 1px solid;
+        padding: 10px;
+        border-radius: 3px;
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+        text-align: center;
+        font-size: 0.7em;
+      }
+      
+      .btn-add-to-basket:hover {
+        display: inline-block;
+        border: #000 1px solid;
+        padding: 10px;
+        border-radius: 3px;
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+        text-align: center;
+        font-size: 0.7em;
+      }
+      
+      .btn-keep-shopping {
+        display: inline-block;
+        border: #fff 1px solid;
+        padding: 10px;
+        border-radius: 3px;
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+        text-align: center;
+        font-size: 0.7em;
+      }
+      
+      .btn-keep-shopping:hover {
+        display: inline-block;
+        border: #000 1px solid;
+        padding: 10px;
+        border-radius: 3px;
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+        text-align: center;
+        font-size: 0.7em;
+      }
+    }
+
+      /* ----------------------------------------------------- Basket Media Queries  */
+
+      @media (max-width: 455px) {
+        .basket-shirt-image {
+          height: 300;
+          width: 300;
+      }
+      
+      .basket-text {
+        font-size: 1em;
+      }
+      
+      .mobile-basket-total {
+        font-size: 1em;
+      }
+
+      .btn-keep-shopping {
+        display: inline-block;
+        border: #fff 1px solid;
+        padding: 10px;
+        border-radius: 3px;
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+        text-align: center;
+        font-size: 0.7em;
+      }
+      
+      .btn-keep-shopping:hover {
+        display: inline-block;
+        border: #000 1px solid;
+        padding: 10px;
+        border-radius: 3px;
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+        text-align: center;
+        font-size: 0.7em;
+      }
+
+      .btn-secure-checkout {
+        display: inline-block;
+        border: #fff 1px solid;
+        padding: 10px;
+        border-radius: 3px;
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+        text-align: center;
+        font-size: 0.7em;
+      }
+      
+      .btn-secure-checkout:hover {
+        display: inline-block;
+        border: #000 1px solid;
+        padding: 10px;
+        border-radius: 3px;
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+        text-align: center;
+        font-size: 0.7em;
+      }
+    }
