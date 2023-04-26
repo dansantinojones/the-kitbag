@@ -389,9 +389,11 @@ footer {
   .mobile-icon {
     font-size: 1.3em;
   }
+}
 
+@media (max-width: 990px) {
   .top-padding {
-    padding-top: 150px;
+    padding-top: 110px;
   }
 }
 
