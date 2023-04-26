@@ -276,16 +276,6 @@ body {
   color: #000;
 }
 
-/* ----------------------------------------------------- About Us */
-
-.about-us-img {
-  height: 75%;
-  width: 75%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* ----------------------------------------------------- My Profile */
 
 .order-history {
