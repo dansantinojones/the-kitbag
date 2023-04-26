@@ -17,11 +17,13 @@ Postcode: 42424
 - Sales
 - Repeat purchase
 - Sign Ups 
+
 ### Target Audience
 - 18 to 44 year olds
 - Football fans
 - Collectors
 - High disposable income
+
 ### Competitor Review
 1. [Classic Football Shirts](https://www.classicfootballshirts.co.uk/)
 
@@ -111,12 +113,17 @@ The Kitbag was created using the agile approach, from the initial planning and w
 
 ## Structure Plane 
 The structure of the pages was carefully planned out when designing the website. I wanted to keep it similar to most e-commerce website structures ensuring that the website is familiar to the user and the content is positioned exactly where the user expects it to be.
+
 ### Consistent
+
 ### Predictable
 - Clickable logo to take user back to home page
 - Images open in a new window
+- External links open in a new window
+
 ### Content Organisation
 The shirts on sale were displayed on the site using bootstrap cards which stack nicely above each other in mobile view making it easy to browse through the products.
+
 ### Information Architecture 
 When planning the shirt detail page I put myself in the shoes of the user to understand what information would be most important to the user and how it will be viewed. The most important information in the buyer decision-making process is, image, name, price and size.
 
@@ -156,38 +163,66 @@ I used [DrawSQL](https://drawsql.app/) to create and visualise the database diag
 
 ![](/media/database-diagram.png)
 
-
-### Sitemap
-
 ## Surface Plane 
-### Colours 
-### Typography 
-### Icons
+### Colours<br>
+The shirts at the store at vibrant and colourful, therefore the main colours chosen for the website are neutral which avoids any colour clashes. I used [Coolors](https://coolors.co/) to create a colour pallet:
+![](/media/colours.png)
+
+### Typography<br>
+The font for the website was chosen using [Google Fonts](https://fonts.google.com/). I decided to use the font 'Noto Sans KR'. Noto is a global font collection for writing in all modern and ancient languages. Noto Sans KR is an unmodulated (Sans Serif) design for the Korean language. I chose this font as it is similar to Sans Serif, I wanted a clear and simple font for the website. 
+
+### Icons<br>
+Icons from [Font Awesome](https://fontawesome.com/) were used throughout the website for visual representation. The icons used are, home, pages, search, basket, phone, email, location, facebook, arrow up and add user.
+
 ### Features
 - Logo<br>
 The logo was created using [Adobe Photoshop](https://www.adobe.com/uk/products/photoshop.html). Design inspiration was taken from popular football club badges. The logo has an imprtant role in the navigation of the website. Users can always return to the home page by clicking on the logo in the header.
-- Search Bar
-- Dropdowns 
+
+- Search Bar<br>
+The search bar is important for customers to search for specific products. If the search term is identified in the name or description of a product then a list of search results will form for the customer to browse. 
+
+- Dropdowns<br>
+The dropdown menus were created to store additional pages without cluttering the main menu for a more finished look and better site structure. The two dropdown’s are ‘My Account’ and ‘Site Info’.
+
 - Leagues Menu<br>
-All shirts on the website are categorised by the teams' leagues. The main nav menu consists of 7 leagues/categories, making it easy for users to browse their favourite leagues. 
-- Mobile Header
+All shirts on the website are categorised by the teams' leagues. The main nav menu consists of 7 leagues/categories, making it easy for users to browse their favourite leagues.
+
+- Mobile Header<br>
+
 - Alert Messages<br>
-Alert messages are very important in communicating back to the user once an action is taken. This provides reassurance to the user that their action was completed successfully/uncusessfully. The alert messages are colour coded with green for success, red for error, yellow for alert and blue for info messages. These messages auto-dismiss after a few seconds. 
-- Sign Up
-- Shirt Cards 
-- Filtering
+Alert messages are very important in communicating back to the user once an action is taken. This provides reassurance to the user that their action was completed successfully/uncusessfully. The alert messages are colour coded with green for success, red for error, yellow for alert and blue for info messages. These messages auto-dismiss after a few seconds.
+
+- Sign Up<br>
+
+- Shirt Cards<br> 
+
+- Filtering<br>
+The users can filter the products using the ‘Sort by…’ dropdown. This will allow users to filter the products by price and name assisting them with their search. 
+
 - Back to Top Button<br>
 The back to top button plays an important role in the navigation of the website. This allows users to return to the top of the page with a click of a button. This is an example good user experience as users don't have to scroll up once at the bottom of the product list. The button is placed on the right of the screen and uses the [Font Awesome](https://fontawesome.com/) arrow up icon.
+
 - Product Count<br>
-The product count notifies users how many products are available in their search or in the specific league category. A home icon is placed next to the product count for users to return to the home page. 
-- Shirt Detail 
-- Basket
-- Checkout 
-- Confirmation
-- Leave a Review 
-- Recent Reviews
-- Update Details 
-- Order History
+The product count notifies users how many products are available in their search or in the specific league category. A home icon is placed next to the product count for users to return to the home page.
+
+- Shirt Detail<br>
+
+- Basket<br>
+
+- Checkout<br>
+
+- Confirmation<br>
+
+- Confirmation Email<br>
+A confirmation email is sent to the customer once an order has been placed. This has been tested with [Temp Mail](https://temp-mail.org/en/) as seen in the image below. The email will thank the customer and provide their order details. This is an integral part of e-commerce websites as it shows professionalism and builds trust with the customer letting the customer know their order has been placed successfully. 
+
+- Leave a Review<br> 
+
+- Recent Reviews<br>
+
+- Update Details<br> 
+
+- Order History<br>
 The profile page displays the user's order history. This is important for the users to keep track of their previous orders all in one place. The cost, date, time and order number is shown under order history. The order number is a link which will take the user to their order confirmation. 
 
 ### Future Features
@@ -199,10 +234,16 @@ The profile page displays the user's order history. This is important for the us
 
 ## Marketing Strategy
 
+## Social Media Marketing
+
 ## SEO
+
 ### Keywords 
+
 ### Robots.txt
+
 ### Sitemap
+
 ### Privacy Policy
 The [Privacy Policy Generator](https://www.privacypolicygenerator.info/) was used to create a Privacy Policy for The Kitbag. It is important to include this on the website as it tells users how and why we are collecting their personal information. From a SEO and Marketing stance, search engine algorithms will find the site trustworthy and prioritise it over websites without one.
 
@@ -305,7 +346,7 @@ The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) discovered 4 error
 - 4x value errors<br>
 These errors were fixed by removing the class as it was not needed.
 ![](/media/css-validator.png)
-Once these errors were addressed, I passed the deployed site back through the validator. No errors were returned. However, the warnings were not addressed as they had no detriment to the website.
+Once these errors were addressed, I passed the deployed site back through the validator. No errors were returned. However, the warnings were not addressed as they have no detriment to the website.
 
 ### Colour Contrast Validator
 The deployed site was entered into the [Colour Contrast Validator](https://color.a11y.com/). This passed with no issues.
@@ -348,8 +389,37 @@ The deployed site was entered into the [Colour Contrast Validator](https://color
 8. Search for your repository and click 'Connect'.
 9. In the 'Settings' tab, scroll to 'Reveal Config Vars' and copy the ElephantSQL URL from the .env file.
 10. In config vars, set PORT to 8000 and add the SECRET_KEY from the .env file.
+
 ### Stripe Setup 
+1. Register for a [Stripe](https://stripe.com/gb) account.
+2. Go to 'Developers' on 'Dashboard'.
+3. Go to 'API Keys' to view public and secret key.
+4. In .env file add STRIPE_PUCLIC_KEY AND STRIPE_SECERET_KEY.
+5. Copy in public and secret keys from Stripe.
+6. Head to Heroku and open the app.
+7. Click on 'settings' and 'Reveal Config Vars'
+8. Add the STRIPE_PUCLIC_KEY AND STRIPE_SECERET_KEY with their keys from Stripe.
+
 ### Amazon Web Services
+1. Create a [Amazon AWS](https://aws.amazon.com/) account.
+2. Open S3 application and create a bucket.
+3. Select an AWS Region.
+4. Uncheck the 'Block All Public Access' setting and acknowledge that the bucket will be public.
+5. In 'Properties', go to the 'Static Website Hosting' and click 'Edit'.
+6. Turn on 'Static Website Hosting' and set index.html and errors.html values.
+7. In 'Permissions', click 'Edit' on the CORS configuration.
+8. Edit 'Bucket Policy' and generate and set configuration 'Bucket Policy'.
+9. Go to 'Access Control List' and set list object permission for everyone.
+10. Open IAM application and set up a user group.
+11. Click on 'Policies' and 'Create Policy'.
+12. Click on the JSON tab and import a pre-built Amazon policy called AmazonS3FullAccess.
+13. Set following settings in JSON tab.
+14. Click 'Review Policy', and provide name and description then 'Create Policy'.
+15. Navigate to 'Groups' then 'Permissions' and 'Add Permission' then 'Attach Policy'.
+16. Click 'Add User' and create one.
+17. Add the user to the group and download the CSV with the user's access credentials.
+18. Add the AWS code in settings.py with an environment variable called USE_AWS.
+
 ### Google Email
 
 ## Development
@@ -359,12 +429,14 @@ The deployed site was entered into the [Colour Contrast Validator](https://color
 3. Select a different owner if necessary
 4. Click on 'Create Fork'
 5. The repository is now in your account and can be changed (Changes made to a forked repository will not affect the original).
+
 ### Clone 
 1. Navigate to the main repository page.
 2. Click on the 'Code' dropdown menu above the list of files.
 3. Choose a method to copy the URL for the repository.
 4. In the work environment, open Git Bash and change the current directory to target location for cloned repository.
 5. Type 'git clone' followed by the copied URL and press 'Enter'.
+
 ### Download ZIP
 1. Log into GitHub and click on the repository to download.
 2. Select 'Code' and click 'Download Zip'.
@@ -374,11 +446,5 @@ The deployed site was entered into the [Colour Contrast Validator](https://color
 1. [Retro Football Shirt Store](https://www.retrofootballshirtstore.com/) for the product images. 
 2. [Boutiqe Ado](https://codeinstitute.net/) walkthrough project with Code Institute for site inspiration.
 
-## Acknowledgements
+## Acknowledgements<br>
 I would like to thank the tutors at Code Institute and my mentor Chris Quinn for his advice and guidance throughout the project.
-
-
-
-
-
-
