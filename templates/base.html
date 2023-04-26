@@ -78,7 +78,7 @@
                 <!-- Account -->
                 <ul>
                     <li class="list-inline-item dropdown">
-                        <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="desktop-icon-link">
                             <div class="text-center">
                                 <div class="desktop-icon"><i class="fas fa-user fa-lg"></i></div>
                                 <p class="desktop-icon-text">My Account</p>
@@ -100,7 +100,7 @@
 
                     <!-- Site Info -->
                     <li class="list-inline-item dropdown">
-                        <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="desktop-icon-link">
                             <div class="text-center">
                                 <div class="desktop-icon"><i class="fa-solid fa-file desktop-icon"></i></div>
                                 <p class="desktop-icon-text">Site Info</p>
@@ -109,7 +109,7 @@
                         <div class="dropdown-menu">
                             <a href="{% url 'about_us' %}" class="dropdown-item">About Us</a>
                             <a href="{% url 'sell_shirt' %}" class="dropdown-item">Sell a Shirt</a>
-                            <a href="{% url 'reviews' %}" class="dropdown-item">Company Reviews</a>
+                            <a href="{% url 'reviews' %}" class="dropdown-item">Reviews</a>
                         </div>
                     </li>
 
@@ -174,28 +174,28 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <ul class="footer-list">
-                        <li>
-                            <a href="{% url 'faqs' %}" class="link-footer">FAQ's</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'returns' %}" class="link-footer">Returns Policy</a>
-                        </li>
-                    </ul>
+                    <div class="footer-list">
+                        <div>
+                            <a href="{% url 'faqs' %}" class="footer-link">FAQ's</a>
+                        </div>
+                        <div>
+                            <a href="{% url 'returns' %}" class="footer-link">Returns Policy</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col footer-text">
                     <p>&copy; Copyright 2023. dansantinojones<br>
                     <small>No commercial revenue is generated from the project.</small></p>
                 </div>
                 <div class="col">
-                    <ul class="footer-list">
-                        <li>
-                            <a href="{% url 'contact_us' %}" class="link-footer">Contact Us</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'privacy_policy' %}" class="link-footer">Privacy Policy</a>
-                        </li>
-                    </ul>
+                    <div class="footer-list">
+                        <div>
+                            <a href="{% url 'contact_us' %}" class="footer-link">Contact Us</a>
+                        </div>
+                        <div>
+                            <a href="{% url 'privacy_policy' %}" class="footer-link">Privacy Policy</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
