@@ -4,7 +4,6 @@ from django.contrib.auth.decorators import login_required
 from .models import Review
 from .forms import PostReviewForm
 
-# Create your views here.
 
 def reviews(request):
     """ A view to return the reviews page """

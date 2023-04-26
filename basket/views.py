@@ -2,8 +2,6 @@ from django.shortcuts import render, redirect, get_object_or_404, HttpResponse
 from django.contrib import messages
 from products.models import Shirt
 
-# Create your views here.
-
 
 def view_basket(request):
     """ A view that renders the basket content page """

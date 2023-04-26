@@ -1,8 +1,6 @@
 from django.contrib import admin
 from .models import Shirt, League, SellShirt
 
-# Register your models here.
-
 
 class ShirtAdmin(admin.ModelAdmin):
     list_display = (

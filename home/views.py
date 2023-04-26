@@ -3,8 +3,6 @@ from django.contrib import messages
 from .models import Newsletter
 from .forms import NewsletterForm
 
-# Create your views here.
-
 
 def index(request):
     """ A view to return the index page """
