@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://the-kitbag.herokuapp.com/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/about_us/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/sell_shirt/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/reviews/reviews/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/basket/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/?league=premier_league</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/?league=serie_a</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/?league=la_liga</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/?league=bundesliga</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/?league=ligue_1</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/?league=rest_of_world</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/?league=international</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/faqs/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/returns/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/contact_us/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/privacy_policy/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/23/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/24/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/25/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/32/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/33/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/34/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/35/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/36/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/37/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/38/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/39/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/40/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/42/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/43/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/44/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/48/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/51/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/59/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/46/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/41/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/47/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/53/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/54/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/55/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/58/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/57/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/60/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/52/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/72/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/89/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/86/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/94/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/88/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/91/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/74/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/84/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/77/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/95/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/81/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/85/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/76/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/82/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/92/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/79/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/80/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/73/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/75/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/78/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/83/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/93/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/87/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/90/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/99/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/109/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/97/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/102/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/100/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/119/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/114/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/101/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/117/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/106/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/113/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/116/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/96/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/110/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/105/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/112/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/98/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/103/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/104/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/108/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/111/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/118/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/115/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://the-kitbag.herokuapp.com/shirts/107/</loc>
+  <lastmod>2023-04-26T18:48:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
