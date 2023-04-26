@@ -192,7 +192,11 @@ All shirts on the website are categorised by the teams' leagues. The main nav me
 - Alert Messages<br>
 Alert messages are very important in communicating back to the user once an action is taken. This provides reassurance to the user that their action was completed successfully/uncusessfully. The alert messages are colour coded with green for success, red for error, yellow for alert and blue for info messages. These messages auto-dismiss after a few seconds.
 
-- Sign Up<br>
+- Sign Up for Newsletter<br>
+
+- Register for an account 
+
+- Password reset
 
 - Shirt Cards<br> 
 
@@ -206,6 +210,10 @@ The back to top button plays an important role in the navigation of the website.
 The product count notifies users how many products are available in their search or in the specific league category. A home icon is placed next to the product count for users to return to the home page.
 
 - Shirt Detail<br>
+
+- Edit and Delete
+
+- Add a shirt to the store 
 
 - Basket<br>
 
@@ -221,9 +229,10 @@ A confirmation email is sent to the customer once an order has been placed. This
 - Recent Reviews<br>
 
 - Update Details<br> 
+Users have the ability to update their delivery information on the 'Profile' page. This saves their changes and pre-populates the checkout form when placing an order.
 
 - Order History<br>
-The profile page displays the user's order history. This is important for the users to keep track of their previous orders all in one place. The cost, date, time and order number is shown under order history. The order number is a link which will take the user to their order confirmation. 
+The 'Profile' page displays the user's order history. It is important for users to keep track of their previous orders in one place. The cost, date, time and order number is shown under order history. The order number is a link which will take the user to their order confirmation. 
 
 ### Future Features
 - Stock Tracker
@@ -310,8 +319,6 @@ The Django Secret Key was accidentally exposed through GitHub. Since noticing th
 | Update Information   | Users can update their information        |  ✅    |
 | Order History   | Display's users order history        |   ✅    |
 
-### Terminal Errors 
-
 ### HTML Validator
 The [W3C HTML Validator](https://validator.w3.org/) discovered 16 errors and 13 warnings. Here is a list of the issues found through the validator:
 - 3 x duplicate id user-options<br>
@@ -353,7 +360,21 @@ The deployed site was entered into the [Colour Contrast Validator](https://color
 ![](/media/colour-contrast-validator.png)
 
 ### Python Linter
+I ran my Python files individually through the [CI Python Linter](https://pep8ci.herokuapp.com/). Here are the results:
+
+| Terminal Errors      | Number of times | Fixed     |
+| :---        |    :----:   |          ---: |
+| No new line      |   15     | ✅   |
+| Blank line contains whitespace   |    4    |    ✅    |
+| Line too long    |   36      |    ❌    |
+| Trailing whitespace   |    6     |   ✅    |
+| Expect 2 blank lines after class / function    |    5    |   ✅    |
+| Too many blank lines    |    2     |    ✅   |
+| Ambiguous variable name   |    1     |    ❌   |
+| At least two lines before inline comment   |    1    |   ✅    |
+
 ### Responsiveness
+### Browsers
 ### Lighthouse
 ### Unfixed Bugs
 
