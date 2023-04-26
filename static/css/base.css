@@ -1,33 +1,33 @@
 @import url(https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap);
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .background-image {
   background-image: url('/media/bg-barca.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: #eee;
-    z-index: -1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: #eee;
+  z-index: -1;
 }
 
 /* ----------------------------------------------------- Header Background */
 
 .main-header-bg {
-    background-color: #eee;
+  background-color: #eee;
 }
 
 .mobile-header-container {
@@ -40,20 +40,20 @@ body {
 /* ----------------------------------------------------- Logo */
 
 .main-logo {
-    height: 120px;
-    width: 120px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  height: 120px;
+  width: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ----------------------------------------------------- Account, Site Info and Basket */
 
 .desktop-icon {
-    color: #000;
-    font-size: 1em;
-    padding-top: 35px;
-    padding-right: 10px;
+  color: #000;
+  font-size: 1em;
+  padding-top: 35px;
+  padding-right: 10px;
 }
 
 .desktop-icon-link:hover {
@@ -61,68 +61,68 @@ body {
 }
 
 .desktop-icon-text {
-    color: #000;
-    text-align: center;
-    padding-right: 20px;
+  color: #000;
+  text-align: center;
+  padding-right: 20px;
 }
 
 .mobile-icon {
-    color: #000;
-    font-size: 5em;
+  color: #000;
+  font-size: 5em;
 }
 
 .mobile-icon-text {
-    color: #000;
-    text-align: center;
+  color: #000;
+  text-align: center;
 }
 
 /* ----------------------------------------------------- Sign Up */
 
-  .sign-up-container {
-    padding-top: 500px;
-    padding-bottom: 200px;
-    text-align: center;
-  }
-
-  .welcome-text {
-    color: #fff;
-    font-size: 3.5em;
-    text-shadow: 2px 2px #000;
+.sign-up-container {
+  padding-top: 500px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 
-  .one-stop-shop-text {
-    color: #fff;
-    font-size: 2em;
-    text-shadow: 2px 2px #000;
-  }
+.welcome-text {
+  color: #fff;
+  font-size: 3.5em;
+  text-shadow: 2px 2px #000;
+}
 
-  .sign-up-text {
-      color: #fff;
-      font-size: 1.5em;
-      text-shadow: 2px 2px #000;
-  }
+.one-stop-shop-text {
+  color: #fff;
+  font-size: 2em;
+  text-shadow: 2px 2px #000;
+}
 
-  .input-signup {
-    height: 40px;
-    width: 80px;
-    border: #000 1px solid;
-    background: #fff;
-    color: #000;
-  }
+.sign-up-text {
+  color: #fff;
+  font-size: 1.5em;
+  text-shadow: 2px 2px #000;
+}
 
-  .sign-up-icon {
-    font-size: 1.8em;
-    color: #fff;
-    text-shadow: 2px 2px #000;
-  }
+.input-signup {
+  height: 40px;
+  width: 80px;
+  border: #000 1px solid;
+  background: #fff;
+  color: #000;
+}
+
+.sign-up-icon {
+  font-size: 1.8em;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+}
 
 /* ----------------------------------------------------- Messages */
 
-  .message-container {
-    position: fixed;
-    top: 72px;
-    right: 15px;
-    z-index: 99999999999;
+.message-container {
+  position: fixed;
+  top: 72px;
+  right: 15px;
+  z-index: 99999999999;
 }
 
 /* ----------------------------------------------------- Shirts and Shirt Detail */
@@ -133,7 +133,7 @@ body {
 }
 
 .top-padding {
-    padding-top: 200px;
+  padding-top: 200px;
 }
 
 .shirt-name {
@@ -247,23 +247,23 @@ body {
 
 /* ----------------------------------------------------- Footer */
 
-  footer {
-    background-color: #fff;
-    color: #000;
-    bottom: 0;
-    clear: both;
-  }
+footer {
+  background-color: #eee;
+  color: #000;
+  bottom: 0;
+  clear: both;
+}
 
 .footer-list {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #000;
 }
 
 .footer-text {
-    font-size: 0.8em;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  font-size: 0.8em;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .footer-link {
@@ -319,13 +319,13 @@ body {
 }
 
 .btt-button {
-    height: 42px;
-    width: 42px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    border: #000 0.5px solid;
-    background-color: #fff;
+  height: 42px;
+  width: 42px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border: #000 0.5px solid;
+  background-color: #fff;
 }
 
 /* ----------------------------------------------------- Links */
@@ -360,325 +360,303 @@ body {
 /* ----------------------------------------------------- Hide Top Menu */
 
 @media (max-width: 990px) {
-    .hidden-mobile {
-      display: none;
-    }
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+
+/* ----------------------------------------------------- Hide Logo  */
+
+@media (min-width: 991px) {
+  .hidden-desktop {
+    display: none;
+  }
+}
+
+/* ----------------------------------------------------- Header Media Queries  */
+
+@media (max-width: 1186px) {
+  header {
+    font-size: 0.7em;
   }
 
-
-  /* ----------------------------------------------------- Hide Logo  */
-
-  @media (min-width: 991px) {
-    .hidden-desktop {
-      display: none;
-    }
+  .main-logo {
+    height: 95px;
+    width: 95px;
   }
 
-  /* ----------------------------------------------------- Header Media Queries  */
-
-  @media (max-width: 1186px) {
-    header {
-      font-size: 0.7em;
-    }
-
-    .main-logo {
-        height: 95px;
-        width: 95px;
-    }
-
-    .mobile-icon {
-      font-size: 1.3em;
-    }
-
-    .top-padding {
-      padding-top: 150px;
-    }
+  .mobile-icon {
+    font-size: 1.3em;
   }
 
-  @media (max-width: 532px) {
-    header {
-      font-size: 0.6em;
-    }
+  .top-padding {
+    padding-top: 150px;
+  }
+}
 
-    .mobile-icon {
-      font-size: 1.3em;
-    }
-
-    .main-logo {
-        height: 55px;
-        width: 55px;
-    }
-
-    .navbar-toggler {
-      height: 35px;
-      width: 45px;
-    }
-  
-    .navbar-toggler-icon {
-      height: 20px;
-      width: 20px;
-    }
-
-    .top-padding {
-      padding-top: 80px;
-    }
+@media (max-width: 532px) {
+  header {
+    font-size: 0.6em;
   }
 
-    /* ----------------------------------------------------- Sign Up Media Queries  */
-
-    @media (max-width: 1000px) {
-
-    .sign-up-container {
-      padding-top: 300px;
-      padding-bottom: 280px;
-      text-align: center;
-    }
-
-    .welcome-text {
-      color: #fff;
-      font-size: 3em;
-      text-shadow: 1px 1px #000;
-    }
-
-    .one-stop-shop-text {
-      color: #fff;
-      font-size: 2em;
-      text-shadow: 2px 2px #000;
-    }
-
-    .sign-up-text {
-      color: #fff;
-      font-size: 1.5em;
-      text-shadow: 1px 1px #000;
-  }
-  
-    .input-signup {
-      height: 30px;
-      width: 70px;
-      border: #000 1.5px solid;
-      background: #fff;
-      color: #000;
-    }
-
-    .sign-up-icon {
-      font-size: 1em;
-      color: #fff;
-      text-shadow: 2px 2px #000;
-    }
+  .mobile-icon {
+    font-size: 1.3em;
   }
 
-  @media (max-width: 595px) {
-    .sign-up-container {
-      padding-top: 200px;
-      padding-left: 50px;
-      padding-right: 50px;
-      text-align: center;
-    }
-
-    .welcome-text {
-      color: #fff;
-      font-size: 2em;
-      text-shadow: 2px 2px #000;
-    }
-
-    .one-stop-shop-text {
-      color: #fff;
-      font-size: 1.5em;
-      text-shadow: 2px 2px #000;
-    }
-
-    .sign-up-text {
-      color: #fff;
-      font-size: 1em;
-      text-shadow: 0.5px 0.5px #000;
-  }
-  
-    .input-signup {
-      height: 20px;
-      width: 60px;
-      border: #000 1px solid;
-      background: #fff;
-      color: #000;
-    }
-
-    .sign-up-icon {
-      font-size: 1em;
-      color: #fff;
-      text-shadow: 0.5px 0.5px #000;
-    }
+  .main-logo {
+    height: 55px;
+    width: 55px;
   }
 
-      /* ----------------------------------------------------- Shirts Media Queries  */
+  .navbar-toggler {
+    height: 35px;
+    width: 45px;
+  }
 
-      @media (max-width: 455px) {
-        .shirt-name-text {
-          font-size: 1em;
-        }
+  .navbar-toggler-icon {
+    height: 20px;
+    width: 20px;
+  }
 
-        .shirt-price-text {
-          font-size: 1em;
-        }
+  .top-padding {
+    padding-top: 80px;
+  }
+}
 
-        .shirt-size-text {
-          font-size: 1em;
-        }
-      }
+/* ----------------------------------------------------- Sign Up Media Queries  */
+
+@media (max-width: 1000px) {
+
+  .sign-up-container {
+    padding-top: 300px;
+    padding-bottom: 280px;
+    text-align: center;
+  }
+
+  .welcome-text {
+    color: #fff;
+    font-size: 3em;
+    text-shadow: 1px 1px #000;
+  }
+
+  .one-stop-shop-text {
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 2px 2px #000;
+  }
+
+  .sign-up-text {
+    color: #fff;
+    font-size: 1.5em;
+    text-shadow: 1px 1px #000;
+  }
+}
+
+@media (max-width: 595px) {
+  .sign-up-container {
+    padding-top: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+  }
+
+  .welcome-text {
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 2px 2px #000;
+  }
+
+  .one-stop-shop-text {
+    color: #fff;
+    font-size: 1.5em;
+    text-shadow: 2px 2px #000;
+  }
+
+  .sign-up-text {
+    color: #fff;
+    font-size: 1em;
+    text-shadow: 0.5px 0.5px #000;
+  }
+
+  .sign-up-icon {
+    font-size: 1.5em;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+  }
+}
+
+/* ----------------------------------------------------- Shirts Media Queries  */
+
+@media (max-width: 455px) {
+  .shirt-name-text {
+    font-size: 1em;
+  }
+
+  .shirt-price-text {
+    font-size: 1em;
+  }
+
+  .shirt-size-text {
+    font-size: 1em;
+  }
+}
 
 
-    /* ----------------------------------------------------- Shirt Detail Media Queries  */
+/* ----------------------------------------------------- Shirt Detail Media Queries  */
 
-    @media (max-width: 455px) {
-      .mobile-title {
-        font-size: 1.5em;
-      }
+@media (max-width: 455px) {
+  .mobile-title {
+    font-size: 1.5em;
+  }
 
-      .shirt-name {
-        font-size: 1.3em;
-      }
-      
-      .shirt-description {
-        font-size: 1em;
-      }
-      
-      .shirt-price-size {
-        font-size: 1em;
-      }
+  .shirt-name {
+    font-size: 1.3em;
+  }
 
-      .btn-add-to-basket {
-        display: inline-block;
-        border: #fff 1px solid;
-        padding: 10px;
-        border-radius: 3px;
-        text-decoration: none;
-        background-color: #fff;
-        color: #000;
-        cursor: pointer;
-        text-align: center;
-        font-size: 0.7em;
-      }
-      
-      .btn-add-to-basket:hover {
-        display: inline-block;
-        border: #000 1px solid;
-        padding: 10px;
-        border-radius: 3px;
-        text-decoration: none;
-        background-color: #fff;
-        color: #000;
-        cursor: pointer;
-        text-align: center;
-        font-size: 0.7em;
-      }
-      
-      .btn-keep-shopping {
-        display: inline-block;
-        border: #fff 1px solid;
-        padding: 10px;
-        border-radius: 3px;
-        text-decoration: none;
-        background-color: #fff;
-        color: #000;
-        cursor: pointer;
-        text-align: center;
-        font-size: 0.7em;
-      }
-      
-      .btn-keep-shopping:hover {
-        display: inline-block;
-        border: #000 1px solid;
-        padding: 10px;
-        border-radius: 3px;
-        text-decoration: none;
-        background-color: #fff;
-        color: #000;
-        cursor: pointer;
-        text-align: center;
-        font-size: 0.7em;
-      }
-    }
+  .shirt-description {
+    font-size: 1em;
+  }
 
-      /* ----------------------------------------------------- Basket Media Queries  */
+  .shirt-price-size {
+    font-size: 1em;
+  }
 
-      @media (max-width: 455px) {
-        .basket-shirt-image {
-          height: 300;
-          width: 300;
-      }
-      
-      .basket-text {
-        font-size: 1em;
-      }
-      
-      .mobile-basket-total {
-        font-size: 1em;
-      }
+  .btn-add-to-basket {
+    display: inline-block;
+    border: #fff 1px solid;
+    padding: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.7em;
+  }
 
-      .btn-keep-shopping {
-        display: inline-block;
-        border: #fff 1px solid;
-        padding: 10px;
-        border-radius: 3px;
-        text-decoration: none;
-        background-color: #fff;
-        color: #000;
-        cursor: pointer;
-        text-align: center;
-        font-size: 0.7em;
-      }
-      
-      .btn-keep-shopping:hover {
-        display: inline-block;
-        border: #000 1px solid;
-        padding: 10px;
-        border-radius: 3px;
-        text-decoration: none;
-        background-color: #fff;
-        color: #000;
-        cursor: pointer;
-        text-align: center;
-        font-size: 0.7em;
-      }
+  .btn-add-to-basket:hover {
+    display: inline-block;
+    border: #000 1px solid;
+    padding: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.7em;
+  }
 
-      .btn-secure-checkout {
-        display: inline-block;
-        border: #fff 1px solid;
-        padding: 10px;
-        border-radius: 3px;
-        text-decoration: none;
-        background-color: #fff;
-        color: #000;
-        cursor: pointer;
-        text-align: center;
-        font-size: 0.7em;
-      }
-      
-      .btn-secure-checkout:hover {
-        display: inline-block;
-        border: #000 1px solid;
-        padding: 10px;
-        border-radius: 3px;
-        text-decoration: none;
-        background-color: #fff;
-        color: #000;
-        cursor: pointer;
-        text-align: center;
-        font-size: 0.7em;
-      }
-    }
+  .btn-keep-shopping {
+    display: inline-block;
+    border: #fff 1px solid;
+    padding: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.7em;
+  }
+
+  .btn-keep-shopping:hover {
+    display: inline-block;
+    border: #000 1px solid;
+    padding: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.7em;
+  }
+}
+
+/* ----------------------------------------------------- Basket Media Queries  */
+
+@media (max-width: 455px) {
+  .basket-shirt-image {
+    height: 300;
+    width: 300;
+  }
+
+  .basket-text {
+    font-size: 1em;
+  }
+
+  .mobile-basket-total {
+    font-size: 1em;
+  }
+
+  .btn-keep-shopping {
+    display: inline-block;
+    border: #fff 1px solid;
+    padding: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.7em;
+  }
+
+  .btn-keep-shopping:hover {
+    display: inline-block;
+    border: #000 1px solid;
+    padding: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.7em;
+  }
+
+  .btn-secure-checkout {
+    display: inline-block;
+    border: #fff 1px solid;
+    padding: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.7em;
+  }
+
+  .btn-secure-checkout:hover {
+    display: inline-block;
+    border: #000 1px solid;
+    padding: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.7em;
+  }
+}
 
 /* ----------------------------------------------------- Footer Media Queries */
 
-    @media (max-width: 745px) {
-      .footer-text {
-        font-size: 0.5em;
-        padding-top: 20px;
-      }
+@media (max-width: 745px) {
+  .footer-text {
+    font-size: 0.5em;
+    padding-top: 20px;
+  }
 
-      .footer-list {
-        padding-top: 15px;
-      }
+  .footer-list {
+    padding-top: 15px;
+  }
 
-      .footer-link {
-        font-size: 0.7em;
-      }
-    }
+  .footer-link {
+    font-size: 0.7em;
+  }
+}
