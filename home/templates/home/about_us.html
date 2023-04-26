@@ -2,39 +2,48 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col">
+<div class="container header-container">
+    <div class="row">
+        <div class="col">
 
-            </div>
         </div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container-fluid top-padding">
-        <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="mobile-title">About Us</h2>
-                <hr class="w-50 mb-1">
-            </div>
+<div class="overlay"></div>
+<div class="container-fluid top-padding">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="mobile-title">About Us</h2>
+            <hr class="w-50 mb-1">
         </div>
     </div>
-    <div class="container text-center mt-3 mb-3">
-        <div class="row mt-3 mb-3">
-            <div class="col-lg-6">
-                <h4>Our Story</h4>
-                <p>I started collecting retro football shirts back in 2003. I had always been a fond collector, from panini stickers to toy cars but after acquiring a rare Boca Juniors home shirt on my travels in South America my passion for collecting retro football shirts began. 
-                    Two years later, my garage was full of kitbags stuffed with retro football shirts from all over the world. After some interest on social media, I decided to part ways with some shirts which began the birth of The Kitbag. </p>
-            </div>
-            <div class="col-lg-6 pb-5">
-                <h4>What We Do</h4>
-                <p>The Kitbag is an online store selling original and premium retro football shirts. Our aim is to offer the rarest collectables sourced from all over the world and provide the best possible service. 
-                    Our small team at The Kitbag are all massive football enthusiasts and we pride ourselves on providing the best classic football shirts from the 70’s, 80’s, 90’s and 00’s. We don’t only sell shirts to customers we also buy them. 
-                    If you have any classic football shirts you would like to sell, please fill in our form on the <a href="{% url 'sell_shirt' %}">sell a shirt</a> page and we will take a look. After years of collecting shirts, we now have a strong authentication process to ensure we only buy and sell originals. 
-                    We do not condone the selling of unauthorised remakes or ‘fakes’. </p>
-            </div>
+</div>
+<div class="container text-center mt-3 mb-3">
+    <div class="row mt-3 mb-3">
+        <div class="col-lg-6">
+            <h4>Our Story</h4>
+            <p>I started collecting retro football shirts back in 2003. I had always been a fond collector, from panini
+                stickers to toy cars but after acquiring a rare Boca Juniors home shirt on my travels in South America
+                my passion for collecting retro football shirts began.
+                Two years later, my garage was full of kitbags stuffed with retro football shirts from all over the
+                world. After some interest on social media, I decided to part ways with some shirts which began the
+                birth of The Kitbag. </p>
+        </div>
+        <div class="col-lg-6 pb-5">
+            <h4>What We Do</h4>
+            <p>The Kitbag is an online store selling original and premium retro football shirts. Our aim is to offer the
+                rarest collectables sourced from all over the world and provide the best possible service.
+                Our small team at The Kitbag are all massive football enthusiasts and we pride ourselves on providing
+                the best classic football shirts from the 70’s, 80’s, 90’s and 00’s. We don’t only sell shirts to
+                customers we also buy them.
+                If you have any classic football shirts you would like to sell, please fill in our form on the <a
+                    href="{% url 'sell_shirt' %}">sell a shirt</a> page and we will take a look. After years of
+                collecting shirts, we now have a strong authentication process to ensure we only buy and sell originals.
+                We do not condone the selling of unauthorised remakes or ‘fakes’. </p>
         </div>
     </div>
+</div>
 {% endblock %}

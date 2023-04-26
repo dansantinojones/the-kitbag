@@ -2,35 +2,36 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col">
+<div class="container header-container">
+  <div class="row">
+    <div class="col">
 
-            </div>
-        </div>
     </div>
+  </div>
+</div>
 {% endblock %}
 
 {% block content %}
 <div class="background-image">
-<!-- Sign Up -->
-    <div class="sign-up-container">
-      <div class="container h-100">
-        <div class="row h-100">
-            <div>
-                <h1 class="welcome-text">Welcome to The Kitbag.</h1> 
-                <h1 class="one-stop-shop-text"> The one stop shop for rare retro football shirts.</h1>
-                <h5 class="sign-up-text">Sign up to our mailing list to be notified <strong>first</strong> of our new <strong>weekly</strong> football shirts on sale</h5>
-                <form method="POST" action="{% url 'newsletter_signup' %}" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    <input type="email" name="email" class="w-75 input-signup" placeholder=" Email">
-                        <button type="submit" class="btn">
-                          <i class="fa-solid fa-user-plus sign-up-icon"></i>
-                        </button>
-                </form>
-              </div>
-            </div>
-          </div>
-    </div>  
-  </div>   
+  <!-- Sign Up -->
+  <div class="sign-up-container">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div>
+          <h1 class="welcome-text">Welcome to The Kitbag.</h1>
+          <h1 class="one-stop-shop-text"> The one stop shop for rare retro football shirts.</h1>
+          <h5 class="sign-up-text">Sign up to our mailing list to be notified <strong>first</strong> of our new
+            <strong>weekly</strong> football shirts on sale</h5>
+          <form method="POST" action="{% url 'newsletter_signup' %}" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="email" name="email" class="w-75 input-signup" placeholder=" Email">
+            <button type="submit" class="btn">
+              <i class="fa-solid fa-user-plus sign-up-icon"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

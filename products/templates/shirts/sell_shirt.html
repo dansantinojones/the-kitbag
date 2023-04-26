@@ -2,31 +2,32 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col">
+<div class="container header-container">
+    <div class="row">
+        <div class="col">
 
-            </div>
         </div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container top-padding">
-        <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="mobile-title">Sell a Shirt</h2>
-                <hr>
-            </div>
+<div class="overlay"></div>
+<div class="container top-padding">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="mobile-title">Sell a Shirt</h2>
+            <hr>
         </div>
+    </div>
 
-        <div class="row">
-            <p>If you are looking to sell a shirt. Please fill out the form below and we will be in touch.</p>
-        </div>
+    <div class="row">
+        <p>If you are looking to sell a shirt. Please fill out the form below and we will be in touch.</p>
+    </div>
 
-        <!-- Sell a shirt form-->
-        <div class="row">
+    <!-- Sell a shirt form-->
+    <div class="row">
+        <div class="col">
             <form method="POST" action="{% url 'sell_shirt' %}" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form | crispy }}
@@ -37,4 +38,5 @@
             </form>
         </div>
     </div>
+</div>
 {% endblock %}

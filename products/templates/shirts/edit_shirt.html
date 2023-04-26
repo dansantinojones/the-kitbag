@@ -2,38 +2,38 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col">
+<div class="container header-container">
+    <div class="row">
+        <div class="col">
 
-            </div>
         </div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container top-padding">
-        <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="mobile-title">Product Management</h2>
-                <h5>Edit a Shirt</h5>
-                <hr>
-            </div>
-        </div>
-
-        <!-- Edit a shirt form-->
-        <div class="row">
-            <div class="col">
-                <form method="POST" action="{% url 'edit_shirt' shirt.id %}" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {{ form | crispy }}
-                    <div class="mb-3">
-                        <button type="submit" class="btn-custom">Update</button>
-                        <a href="{% url 'shirts' %}" class="btn-custom">Cancel</a>
-                    </div>
-                </form>
-            </div>
+<div class="overlay"></div>
+<div class="container top-padding">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="mobile-title">Product Management</h2>
+            <h5>Edit a Shirt</h5>
+            <hr>
         </div>
     </div>
+
+    <!-- Edit a shirt form-->
+    <div class="row">
+        <div class="col">
+            <form method="POST" action="{% url 'edit_shirt' shirt.id %}" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <div class="mb-3">
+                    <button type="submit" class="btn-custom">Update</button>
+                    <a href="{% url 'shirts' %}" class="btn-custom">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}
