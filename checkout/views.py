@@ -116,7 +116,7 @@ def checkout_success(request, order_number):
         order.user_profile = profile
         order.save()
 
-        # Save the users info 
+        # Save the users info
         if save_info:
             profile_data = {
                 'default_phone_number': order.phone_number,
@@ -140,7 +140,7 @@ def checkout_success(request, order_number):
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-        
+
         send_mail(
             subject,
             body,
@@ -159,6 +159,6 @@ def checkout_success(request, order_number):
     context = {
         'order': order,
     }
-    
+
     _send_confirmation_email(order)
     return render(request, template, context)

@@ -17,7 +17,6 @@ class ShirtForm(forms.ModelForm):
             field.widget.attrs['class'] = 'border-black rounded-0'
 
 
-
 class SellShirtForm(forms.ModelForm):
     class Meta:
         model = SellShirt

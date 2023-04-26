@@ -1,7 +1,7 @@
 import uuid
 
 from django.db import models
-from django.db.models import Sum 
+from django.db.models import Sum
 from django.conf import settings
 
 from products.models import Shirt
@@ -43,9 +43,9 @@ class Order(models.Model):
         self.save()
 
     def save(self, *args, **kwargs):
-        """ 
+        """
         Override the original save method to set order number if
-        it hasn't been set already 
+        it hasn't been set already
         """
         if not self.order_number:
             self.order_number = self._generate_order_number()
@@ -62,9 +62,9 @@ class OrderLineItem(models.Model):
     lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
 
     def save(self, *args, **kwargs):
-        """ 
+        """
         Override the original save method to set order number if
-        it hasn't been set already 
+        it hasn't been set already
         """
         self.lineitem_total = self.shirt.price
         super().save(*args, **kwargs)

@@ -12,4 +12,5 @@ class ReviewsAdmin(admin.ModelAdmin):
 
     ordering = ('created_on',)
 
+
 admin.site.register(Review, ReviewsAdmin)

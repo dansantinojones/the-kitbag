@@ -12,4 +12,5 @@ class NewsletterAdmin(admin.ModelAdmin):
 
     ordering = ('added_on',)
 
+
 admin.site.register(Newsletter, NewsletterAdmin)

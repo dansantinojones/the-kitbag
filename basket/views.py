@@ -31,7 +31,7 @@ def remove_from_basket(request, item_id):
     try:
         shirt = get_object_or_404(Shirt, pk=item_id)
         basket = request.session.get('basket', {})
-            
+
         basket.pop(item_id)
         messages.success(request, f'Removed {shirt.name} from your basket')
 

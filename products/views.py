@@ -30,7 +30,6 @@ def all_shirts(request):
                     sortkey = f'-{sortkey}'
             shirts = shirts.order_by(sortkey)
 
-
         if 'league' in request.GET:
             leagues = request.GET['league'].split(',')
             shirts = shirts.filter(league__name__in=leagues)

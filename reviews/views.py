@@ -27,4 +27,3 @@ def reviews(request):
         'form': form,
     }
     return render(request, 'reviews/reviews.html', context)
-
