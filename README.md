@@ -432,6 +432,13 @@ The footer is consistent on all pages of the website. It includes a copyright ma
 <hr>
 <br>
 
+## **Business Model**
+The business model for The Kitbag will mainly be a B2C(Business to Consumer), selling retro football shirts to consumers. However, there will be an element of C2B(Consumer to Business) with the sell a shirt facility. The online store will sell and deliver goods to purchasing customers and all marketing will be done digitally.
+
+<br>
+<hr>
+<br>
+
 ## **Marketing Strategy**
 The marketing strategies chosen for The Kitbag will be SEO, Social Media Marketing and Email Marketing. Pages such as robots.txt, sitemap and privacy policy help SEO ranking.
 These will all be covered in more detail below.
