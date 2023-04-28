@@ -1,4 +1,4 @@
-![](/media/am-i-responsive-1.png)
+![](/media/am-i-responsive.png)
 # The Kitbag
 
 ## **Introduction**
@@ -166,7 +166,7 @@ The structure of the pages was carefully planned out when designing the website.
 <br>
 
 ### **Content Organisation**<br>
-The shirts on sale were displayed on the site using bootstrap cards which stack nicely above each other in mobile view making it easy to browse through the products.
+The shirts on sale were displayed on the site using [Bootstrap](https://getbootstrap.com/) cards which stack nicely above each other in mobile view making it easy to browse through the products.
 
 <br>
 <hr>
@@ -228,7 +228,7 @@ Below is my database diagram and the relationships between them.
 
 ## **Surface Plane**
 ### **Colours**<br>
-The shirts at the store at vibrant and colourful, therefore the main colours chosen for the website are neutral which avoids any colour clashes. I used [Coolors](https://coolors.co/) to create a colour pallet:
+The shirts at the store are vibrant and colourful, therefore the main colours chosen for the website are neutral which avoids any colour clashes. I used [Coolors](https://coolors.co/) to create a colour pallet:
 ![](/media/colours.png)
 
 <br>
@@ -280,13 +280,13 @@ The basket icon from [Font Awesome](https://fontawesome.com/) has the basket tot
 ![](/media/basket-total.png)
 
 - Alert Messages<br>
-Alert messages are very important in communicating back to the user once an action is taken. This provides reassurance to the user that their action was completed successfully/uncusessfully. The alert messages are colour coded with green for success, red for error, yellow for alert and blue for info messages. These messages auto-dismiss after a few seconds.<br>
+Alert messages are very important in communicating back to the user once an action is taken. This provides reassurance to the user that their action was completed successfully/unsuccessfully. The alert messages are colour coded with green for success, red for error, yellow for alert and blue for info messages. These messages auto-dismiss after a few seconds.<br>
 ![](/media/alert-blue.png)<br>
 ![](/media/alert-green.png)<br>
 ![](/media/alert-red.png)<br>
 
 - Sign Up for Newsletter<br>
-Signs ups are one of the business goals. The aim is to get users to sign up to create a mailing list for email marketing. Therefore the sign up section is placed on the home page so it is the first thing the user sees when visiting the website.<br>
+Signs up's are one of the business goals. The aim is to get users to sign up to create a mailing list for email marketing. Therefore the sign up section is placed on the home page so it is the first thing the user sees when visiting the website.<br>
 ![](/media/sign-up-newsletter.png)
 
 - Register for an account<br>
@@ -368,7 +368,7 @@ Signed in users can check this box to save their delivery information to their p
 ![](/media/save-delivery-info.png)
 
 - Confirmation<br>
-Once the customer has successfully checked out, they will be directed to the oerder confirmation page. This will show their order details.<br>
+Once the customer has successfully checked out, they will be directed to the order confirmation page. This will show their order details.<br>
 ![](/media/order-conf.png)
 
 - Confirmation Email<br>
@@ -464,8 +464,7 @@ A sitemap file with a list of important URLs is important for search engines to 
 <br>
 
 ### **Social Media Marketing**<br>
-Social media marketing will be integral to the success of The Kitbag. The most popular platform for social media marketing is Facebook: [The Kitbag Facebook](https://www.facebook.com/profile.php?id=100091983074101). This platform provides a link to the website, contact details and opening times. The social media accounts will be used to create interactive posts promoting new stock and encouraging sign-ups, driving traffic to the website and encouraging two-way communication. Once the page is established, paid ads will be considered to directly reach the target market. 
-
+Social media marketing will be integral to the success of The Kitbag. The most popular platform for social media marketing is Facebook: [The Kitbag Facebook](https://www.facebook.com/profile.php?id=100091983074101). This platform provides a link to the website, contact details and opening times. The social media accounts will be used to create interactive posts promoting new stock and encouraging sign-ups, driving traffic to the website and encouraging two-way communication.
 ![](/media/facebook-page.png)
 ![](/media/facebook-post.jpg)
 
@@ -499,7 +498,7 @@ The [Privacy Policy Generator](https://www.privacypolicygenerator.info/) was use
 - [Gunicorn](https://gunicorn.org/) was used to run the application.
 - [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/) was used to style the website content.
 - [Git](https://git-scm.com/) was used for version control to commit and push to GitHub.
-- [GitPod](https://www.gitpod.io/) was used to 
+- [GitPod](https://www.gitpod.io/) was used as the development environment. 
 - [GitHub](https://github.com/) was used to store the code.
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools/) was used to fix errors and test responsiveness.
 - [Heroku](https://heroku.com/) was used to deploy the website.
@@ -516,7 +515,7 @@ The [Privacy Policy Generator](https://www.privacypolicygenerator.info/) was use
 - [Pixaby](https://pixabay.com/) was used for the background image.
 - [Grammarly](https://www.grammarly.com/) was used to check the grammar of the website content.
 - [Privacy Policy Generator](https://www.privacypolicygenerator.info/) was used to create the privacy policy.
-- [Termly](https://termly.io/products/refund-return-policy-generator/)
+- [Termly](https://termly.io/products/refund-return-policy-generator/) was used to create the returns policy.
 
 <br>
 <hr>
