@@ -345,7 +345,7 @@ The delete a shirt from the store functionality is only available to site owners
 
 - Basket<br>
 The basket display's the shoppers items in a list, including the image, name, size and price. If multiple items are in the basket they will stack above each other. The basket is responsive on smaller screens as well.<br>
-![],br(/media/basket.png)
+![](/media/basket.png)
 
 - Basket Total<br>
 The basket totals display the bag total, delivery cost and grand total. If the order is below £100 there will be a delivery charge of 5%. However, the basket totals will notify the customer how much more they need to spend to get free delivery. The 'Secure Checkout' and 'Keep Shopping' buttons are placed close to the basket totals to guide the shopper to the next step.<br>
