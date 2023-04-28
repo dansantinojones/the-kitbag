@@ -1,3 +1,4 @@
+![](/media/am-i-responsive-1.png)
 # The Kitbag
 
 ## **Introduction**
@@ -149,6 +150,7 @@ The structure of the pages was carefully planned out when designing the website.
 - Header with navigation on all pages.
 - Footer displayed on all pages.
 - Same font throughout the website. 
+- Same button styling throughout the website.
 
 <br>
 <hr>
@@ -216,7 +218,7 @@ I designed a flowchart using [Lucidchart](https://lucid.app/documents#/documents
 <br>
 
 ### **Database Diagram**
-I used [DrawSQL](https://drawsql.app/) to create and visualise the database diagram and the relationships between them. 
+Below is my database diagram and the relationships between them. 
 
 ![](/media/database-diagram.png)
 
@@ -284,6 +286,7 @@ Alert messages are very important in communicating back to the user once an acti
 ![](/media/alert-red.png)<br>
 
 - Sign Up for Newsletter<br>
+Signs ups are one of the business goals. The aim is to get users to sign up to create a mailing list for email marketing. Therefore the sign up section is placed on the home page so it is the first thing the user sees when visiting the website.<br>
 ![](/media/sign-up-newsletter.png)
 
 - Register for an account<br>
@@ -313,7 +316,7 @@ If a shirt is added to the store without an image. The no image placeholder imag
 
 - Filtering<br>
 The users can filter the products using the ‘Sort by…’ dropdown. This will allow users to filter the products by price and name assisting them with their search.<br>
-![](/media/sort-by.png)
+![](/media/sort-by.png)<br>
 ![](/media/sort-by-options.png)
 
 - Back to Top Button<br>
@@ -341,16 +344,28 @@ The delete a shirt from the store functionality is only available to site owners
 ![](/media/delete-modal.png)
 
 - Basket<br>
-![](/media/basket.png)
+The basket display's the shoppers items in a list, including the image, name, size and price. If multiple items are in the basket they will stack above each other. The basket is responsive on smaller screens as well.<br>
+![],br(/media/basket.png)
 
 - Basket Total<br>
+The basket totals display the bag total, delivery cost and grand total. If the order is below £100 there will be a delivery charge of 5%. However, the basket totals will notify the customer how much more they need to spend to get free delivery. The 'Secure Checkout' and 'Keep Shopping' buttons are placed close to the basket totals to guide the shopper to the next step.<br>
 ![](/media/basket-grand-totals.png)
 
 - Remove from basket<br>
+The red 'Remove' link next to the items in the basket, when clicked will remove that specific item from the basket.<br>
 ![](/media/remove-from-basket.png)
 
 - Checkout<br>
+The checkout page is split into three sections. 'Your Details' which requires the customer's name, email and phone number. 'Delivery' requires the customer's delivery address. Lastly, the 'Payment' section which is facilitated by [Stripe](https://stripe.com/gb). If you want to test the payment system, use these test card details: <br>
+Card Number: 4242 4242 4242 4242 <br>
+Date: 0424 <br>
+CVC: 242 <br>
+Postcode: 42424<br>
 ![](/media/checkout.png)
+
+- Save Delivery Info<br>
+Signed in users can check this box to save their delivery information to their profile. This allows for faster checkout in the future and will encourage repeat purchases.<br>
+![](/media/save-delivery-info.png)
 
 - Confirmation<br>
 Once the customer has successfully checked out, they will be directed to the oerder confirmation page. This will show their order details.<br>
@@ -361,9 +376,11 @@ A confirmation email is sent to the customer once an order has been placed. This
 ![](/media/order-conf-email.png)
 
 - Leave a Review<br>
+Site users have the ability to leave a review to express their satisfaction/dissatisfaction with the company. A form is displayed where the user is asked to provide a rating and a comment.
 ![](/media/leave-a-review.png)
 
 - Recent Reviews<br>
+The recent reviews are displayed on the 'Reviews' page. These can be managed by the site owner in the admin. A max height is provided so if the recent reviews exceed that, then a scroll bar is provided to view older reviews.
 ![](/media/recent-reviews.png)
 
 - Update Details<br> 
@@ -374,7 +391,7 @@ Users have the ability to update their delivery information on the 'Profile' pag
 The 'Profile' page displays the user's order history. It is important for users to keep track of their previous orders in one place. The cost, date, time and order number is shown under order history. The order number is a link which will take the user to their order confirmation.<br>
 ![](/media/order-history.png)
 
-- Sell a Shirt 
+- Sell a Shirt<br>
 The 'Sell a Shirt' page allows users to fill in a form offering up their shirts for sale. Most fields are required, the user must fill in their contact details and provide images of the shirt. The user will then be contacted if we decide to purchase the shirt from them.<br>
 ![](/media/sell-a-shirt.png)
 
@@ -415,25 +432,17 @@ The footer is consistent on all pages of the website. It includes a copyright ma
 <hr>
 <br>
 
-## **Business Model**
-
-<br>
-<hr>
-<br>
-
 ## **Marketing Strategy**
+The marketing strategies chosen for The Kitbag will be SEO, Social Media Marketing and Email Marketing. Pages such as robots.txt, sitemap and privacy policy help SEO ranking.
+These will all be covered in more detail below.
 
 <br>
 <hr>
 <br>
 
-### **SEO**
-
-<br>
-<hr>
-<br>
-
-### **Keywords** 
+### **Search Engine Optimization (SEO)**
+Keywords were identified through [Wordtracker](https://www.wordtracker.com/search) and [Google Trends](https://trends.google.com/home). These tools helped me identify what keywords users are searching for. To test the relevance of the keywords, each keyword was entered into [Google](https://www.google.com/) to find out the number of results and search suggestions, the most relevant were added to the keyword list. Once chosen the most suitable, these keywords were included in meta tags, titles, descriptions, headings and the content throughout the website to improve the SEO ranking. 
+![](/media/meta.png)
 
 <br>
 <hr>
@@ -500,7 +509,6 @@ The [Privacy Policy Generator](https://www.privacypolicygenerator.info/) was use
 - [Adobe Photoshop](https://www.adobe.com/uk/products/photoshop.html) was used to design and create the logo.
 - [Figma](https://www.figma.com/) was used to design the wireframes.
 - [Lucid Charts](https://lucid.app/) was used to design the navigation diagram.
-- [DrawSQL](https://drawsql.app/) was used to create database diagrams.
 - [Similarweb](https://www.similarweb.com/) was used for competitor analysis.
 - [Stripe](https://stripe.com/gb) was used to process the card payment functionality. 
 - [Amazon AWS](https://aws.amazon.com/) was used to store the static and media files.
@@ -723,7 +731,7 @@ I used [Responsivley](https://responsively.app/) to test my website across diffe
 The website has been tested on all the browsers below. No major issues to report on.
 
 
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>IE / Edge | <br/> | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari-ios/safari-ios_48x48.png" alt="iOS Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>iOS Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/samsung-internet/samsung-internet_48x48.png" alt="Samsung" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Samsung | |
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>IE / Edge || [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari-ios/safari-ios_48x48.png" alt="iOS Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>iOS Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/samsung-internet/samsung-internet_48x48.png" alt="Samsung" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Samsung | |
 | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
 
 
@@ -732,12 +740,22 @@ The website has been tested on all the browsers below. No major issues to report
 <br>
 
 ### **Lighthouse**
+I used Lighthouse in [Chrome Dev Tools](https://developer.chrome.com/docs/lighthouse/overview/) to run a report on the website:<br>
+Desktop:<br>
+![](/media/lighthouse-desktop.png)<br>
+Mobile:<br>
+![](/media/lighthouse-mobile.png)
+
+There are a few improvments to be made on the performance on mobile. However, these will be addressed at a later date.
 
 <br>
 <hr>
 <br>
 
 ### **Unfixed Bugs**
+There were no major bugs that were left unfixed. However, if I had more time I would work on the following:
+- Compress images to improve load screen and mobile performance
+- Fix line too long warnings to produce cleaner code to meet industry standards.
 
 <br>
 <hr>
@@ -760,6 +778,21 @@ The website has been tested on all the browsers below. No major issues to report
 <br>
 
 ### **Django Setup**
+1. In the terminal enter, pip3 install 'django<4'.
+2. Then enter, django-admin startproject *your project name*
+3. You will see the django project folder, including settings.py and urls.py.
+4. Back to the terminal, enter touch .gitignore.
+5. In the .gitignore file enter, *.sqlite3 and *.pyc and __pycache__
+6. Run the project by entering python3 manage.py runserver to check it is running well. 
+7. Your page should show a rocket with 'The install worked successfully! Congratulations!' below it.
+8. Back in the terminal CTRL + C to quit the server.
+9. To migrate enter, python3 manage.py migrate.
+10. To create a superuser enter, python3 manage.py createsuperuser.
+11. Provide username, email and password.
+12. Then, git add . in the terminal
+13. Then, git commit -m *"your commit message"*
+14. Finally, git push to push the changes. 
+
 
 <br>
 <hr>
